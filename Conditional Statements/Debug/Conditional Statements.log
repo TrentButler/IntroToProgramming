@@ -1,0 +1,10 @@
+﻿  Conditional Statrements.cpp
+<<<<<<< HEAD
+c:\users\trent.butler\documents\github\introtoprogramming\conditional statements\conditional statrements.cpp(96): warning C4101: 'display': unreferenced local variable
+  Conditional Statements.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\Debug\Conditional Statements.exe
+  Conditional Statements.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\Debug\Conditional Statements.pdb (Partial PDB)
+=======
+c:\users\redtrent\documents\github\introtoprogramming\conditional statements\conditional statrements.cpp(238): warning C4102: 'std': unreferenced label
+  Conditional Statements.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\Debug\Conditional Statements.exe
+  Conditional Statements.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\Debug\Conditional Statements.pdb (Partial PDB)
+>>>>>>> origin/master
