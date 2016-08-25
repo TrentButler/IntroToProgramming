@@ -124,10 +124,9 @@ int main()
 	*/
 
 	//EXERCISE 5
-	
+	/*
 int e[10];
-int largeNumber = e[0];
-int smallNumber = e[0];
+
 	int d;	
 	
 	cin >> e[0];
@@ -140,25 +139,47 @@ int smallNumber = e[0];
 	cin >> e[7];
 	cin >> e[8];
 	cin >> e[9];
+	int largeNumber = e[0];
+	int smallNumber = e[0];
 	for (d = 0; d < 10; d++)
 	
+	{
+		
 		if (largeNumber < e[d])
 			largeNumber = e[d];
-			
+
 		if (smallNumber > e[d])
 			smallNumber = e[d];
-	
+					
+	}
 
-		cout << largeNumber << smallNumber;
-
-		system("pause");
-
-
-
-
-
-
+	cout <<"The largest number entered is "<< largeNumber << "\n" <<"The smallest number entered is "<< smallNumber;
+	cout << "\n";
+	system("pause");
 
 		return 0;
+		*/
+
+//EXERCISE 6
+int g = 0;
+int f[3][3] = {
+	{1,2,3},
+	{4,5,6},
+	{7,8,9}
+	
+};
+for (g = 0; g <= 3; g++)
+{
+	for (g = 4; g <= 6; g++);
+	{
+		for (g = 7; g <= 9; g++);
+	}
+
+}
+cout << f[3][3];
+
+
+system("pause");
+
 
 }
