@@ -121,7 +121,9 @@ Pass the two numbers into a fuinciton and output what the funciton returns.
 
 //EXERCISE 4
 	/* - The following statement calls a function named Half.
-	The Half function returns a value that is half that of the argument. 	Write the function.	
+	The Half function returns a value that is half that of the argument. 
+	Write the function.
+	
 	
 	
 	cout << "4. The Half function returns a value that is half that of the argument. \n";
@@ -142,7 +144,10 @@ Pass the two numbers into a fuinciton and output what the funciton returns.
 		The rand() can be added by adding "#include <cstflib>" to the top of your program. 
 		It returns a random number between 0 and 32767.
 		Demonstrate the function in a program that asks the user how many times they want to
-		toss the coin, and then simulates the tossing of the coin that number of times.		*/	
+		toss the coin, and then simulates the tossing of the coin that number of times.
+		*/
+
+	
 	/*
 	cout << "Coin Toss \n";
 	cout << "How many times will the coin be tossed? \n";
@@ -155,13 +160,15 @@ Pass the two numbers into a fuinciton and output what the funciton returns.
 
 
 //EXERCISE 6
-	// 6. Find the error in each of the following functions and explain how to fix them.	///*
+	// 6. Find the error in each of the following functions and explain how to fix them.
+	///*
 	//
 	//int sum(int x, int y)
 	//{
 	//	int result;
 	//	result = x + y;
-	//}
+	//}
+
 	//- This function does not return a value.
 
 	//
@@ -201,7 +208,8 @@ cout << "\n";
 int result = SumTo(3); //result = 1 + 2 + 3 = 6
 std::cout << result << std::endl;
 result = SumTo(15); //result should now be 120
-std::cout << result << std::endl;
+std::cout << result << std::endl;
+
 
 system("pause");
 

@@ -34,6 +34,14 @@ int main()
 
 //EXERCISE 3
 	
+
+
+
+
+
+
+
+
 //EXERCISE 4
 	
 	std::cout << " \n";
@@ -138,6 +146,7 @@ int main()
 		
 	}
 	std::cout << " \n";
+
 	std::cout << "The answer is " << display2 << "\n";
 
 	system("pause");

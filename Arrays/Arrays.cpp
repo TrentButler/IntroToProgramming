@@ -161,25 +161,50 @@ int e[10];
 		*/
 
 //EXERCISE 6
-int g = 0;
-int f[3][3] = {
+
+//6. Create a program that creates a 3x3 array of integers. 
+// - Output the numbers in a grid format.
+
+
+
+
+int f[3][3] = { // Declaring array f[3][3] size
 	{1,2,3},
 	{4,5,6},
 	{7,8,9}
 	
 };
-for (g = 0; g <= 3; g++)
-{
-	for (g = 4; g <= 6; g++);
-	{
-		for (g = 7; g <= 9; g++);
-	}
 
+for (int i = 0; i < 3; i++) // for loop used for array rows 
+{
+	cout << endl;
+	for (int j = 0; j < 3; j++) // for loop used for array columns
+	{
+		cout << f[i][j]; // print to system arrays
+	}
 }
-cout << f[3][3];
 
 
 system("pause");
+
+
+
+
+
+//EXERCISE 7
+
+
+int days[29][5] = { 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29 };
+for (int i = 0; i < 29; i++)
+{
+	cout << endl;
+	for (int j = 0; j < 5; j++)
+		cout << days[i][j];
+}
+
+
+
+
 
 
 }
