@@ -13,6 +13,7 @@ int coinChance;
 int coinFlip = 0;
 int i;
 int N;
+int display;
 
 
 float smallNumber()
@@ -40,13 +41,11 @@ int SumTo(int N)
 {
 	for (int i = 0; i <= N; i++)
 		display += i;
-	cout << display;
+		
 
 
-
-
-
-	return 0;
+	
+	return display;
 }
 
 
@@ -205,6 +204,10 @@ result = SumTo(15); //result should now be 120
 std::cout << result << std::endl;
 
 system("pause");
+
+
+//EXERCISE 8
+// 8. Write a function that takes as its parameters an array of intergers and the size of the array and return the sum of the values in the array.
 
 
 	
