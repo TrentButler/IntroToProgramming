@@ -12,6 +12,8 @@ float result = 0;
 int coinChance;
 int coinFlip = 0;
 int i;
+int N;
+
 
 float smallNumber()
 	{
@@ -34,7 +36,18 @@ float Half()
 	return 0;
 }
 
+int SumTo(int N)
+{
+	for (int i = 0; i <= N; i++)
+		display += i;
+	cout << display;
 
+
+
+
+
+	return 0;
+}
 
 
 
@@ -143,8 +156,58 @@ Pass the two numbers into a fuinciton and output what the funciton returns.
 
 
 //EXERCISE 6
-	// 6. Find the error in each of the following functions and explain how to fix them.
+	// 6. Find the error in each of the following functions and explain how to fix them.	///*
+	//
+	//int sum(int x, int y)
+	//{
+	//	int result;
+	//	result = x + y;
+	//}
+	//- This function does not return a value.
 
+	//
+	//int sum (int n)
+	//{
+	//if (0 == n)
+	//return 0;
+	//else
+	//n = n + n;
+	//}
+
+	//- .
+
+
+
+	//#include <iostream>
+	//int main()
+	//{
+	//double x = 13.6;
+	//std::cout << "square of 13.6 = " << square(x) << std::endl;
+	//}
+	//}
+	//int square (int x)
+	//{
+	//return x * x;
+
+	//- "square(x)" is not defined.
+	//- Function is not being called, defined after "int main()".
+	
+
+//EXERCISE 7
+
+cout << "7. Write a function called SumTo that accepts an integer parameter N and returns the sum of all integers from 1 to N, including N.";
+cout << "\n";
+cout << "\n";
+
+int result = SumTo(3); //result = 1 + 2 + 3 = 6
+std::cout << result << std::endl;
+result = SumTo(15); //result should now be 120
+std::cout << result << std::endl;
+
+system("pause");
+
+
+	
 
 
 

@@ -1,3 +1,3 @@
 ﻿  Functions.cpp
-  Functions.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\x64\Debug\Functions.exe
-  Functions.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\x64\Debug\Functions.pdb (Partial PDB)
+c:\users\redtrent\documents\github\introtoprogramming\functions\functions.cpp(42): error C2065: 'display': undeclared identifier
+c:\users\redtrent\documents\github\introtoprogramming\functions\functions.cpp(43): error C2065: 'display': undeclared identifier
