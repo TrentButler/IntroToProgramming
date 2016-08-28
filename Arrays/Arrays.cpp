@@ -204,7 +204,8 @@ system("pause");
 // 7. An application uses a two dimensional array defined as follows:
 // int days[29][5];
 // Write code that sums each row in the array and displays the results.
-// Write code that sums each column in the array and displays the results.
+// Write code that sums each column in the array and displays the results.
+
 /*
 
 cout << "7. Application uses a two dimensional array is defined as follows: \n";
@@ -302,19 +303,19 @@ int test = 0;
 			cout << "Cannot attack player A anymore. \n";
 	
 
-	 if (charB == 0)
+		if (charB == 0)
 			cout << "Cannot attack player B anymore. \n";
 		
 
-	 if (charC == 0)
+		 if (charC == 0)
 			cout << "Cannot attack player C anymore. \n";
 			
 
-	 if (charD == 0)
+		 if (charD == 0)
 			cout << "Cannot attack player D anymore. \n";
 			
 
-	 if (charE == 0)
+		 if (charE == 0)
 			cout << "Cannot attack player E anymore. \n";
 			
 			
