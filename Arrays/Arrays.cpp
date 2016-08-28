@@ -3,6 +3,10 @@
 using namespace std;
 int main()
 {
+	int display = 0;
+	int display1 = 0;
+	
+	
 	/*
 	std::cout << "Example of a Array \n";
 	system("pause");
@@ -124,7 +128,9 @@ int main()
 	*/
 
 	//EXERCISE 5
-	/*
+/*
+cout << "This program will display the largest number entered. \n";
+cout << "Please enter 10 numbers. \n";
 int e[10];
 
 	int d;	
@@ -165,8 +171,9 @@ int e[10];
 //6. Create a program that creates a 3x3 array of integers. 
 // - Output the numbers in a grid format.
 
-
-
+/*
+cout << "6. Create a program that creates a 3x3 array of integers. \n";
+cout << "- Output the numbers in a grid format. \n";
 
 int f[3][3] = { // Declaring array f[3][3] size
 	{1,2,3},
@@ -184,23 +191,147 @@ for (int i = 0; i < 3; i++) // for loop used for array rows
 	}
 }
 
-
+cout << "\n";
+cout << "\n";
 system("pause");
 
 
-
+*/
 
 
 //EXERCISE 7
 
+// 7. An application uses a two dimensional array defined as follows:
+// int days[29][5];
+// Write code that sums each row in the array and displays the results.
+// Write code that sums each column in the array and displays the results.
+/*
 
-int days[29][5] = { 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29 };
-for (int i = 0; i < 29; i++)
+cout << "7. Application uses a two dimensional array is defined as follows: \n";
+cout << "\n";
+cout << "int days[29][5]; \n";
+cout << "\n";
+cout << "Write code that sums each row and column and displays the results. \n";
+
+cout << "\n";
+int days[29][5]; // Array named "days" has 29 rows and 5 columns. 
+for (int i = 0; i < 29; i++) // Declaring my loop for the 29 rows.
 {
-	cout << endl;
-	for (int j = 0; j < 5; j++)
-		cout << days[i][j];
+	display += i; // Adding all numbers in the 29 rows, assigning the sum to "display".
+	for (int j = 0; j < 5; j++) // Declaring my loop for the 5 columns.
+		display1 += j; // Adding all numbers in the 5 columns, assigning the sum to "display1".
 }
+
+cout <<"The sum of each row in the array is: "<< display;
+cout << "\n";
+cout << "The sum of each column in the array is: "<< display1;
+cout << "\n";
+system("pause");
+
+*/
+
+
+//EXERCISE 8
+
+/*
+8. Create a program that declares an array of 5 integer values. These values will represent the
+health of 5 characters. Initialise the values all to 100. Your program is to ask the user to
+enter a number (0 to 4) to select a character that is to be attacked by a monster. Each attack
+deals 40 damage per attack. If a player’s health gets below 0 then should not be able to be
+attacked. Your program should simulate 5 attacks. After the attacks have finished, output
+the parties’ remaining health to the console.
+*/
+
+
+/*
+8. Create a program that declares an array of 5 integer values. These values will represent the
+health of 5 characters. Initialise the values all to 100. Your program is to ask the user to
+enter a number (0 to 4) to select a character that is to be attacked by a monster. Each attack
+deals 40 damage per attack. If a player’s health gets below 0 then should not be able to be
+attacked. Your program should simulate 5 attacks. After the attacks have finished, output
+the parties’ remaining health to the console.
+
+*/
+
+int attack;
+int charA;
+int charB;
+int charC;
+int charD;
+int charE;
+int test = 0;
+
+
+
+
+
+
+
+
+	int charHealth[5] = { 100,100,100,100,100 };
+	charA = charHealth[0];
+	charB = charHealth[1];
+	charC = charHealth[2];
+	charD = charHealth[3];
+	charE = charHealth[4];
+
+
+
+	while (test < 5)
+	{
+		test++;
+		cin >> attack;
+
+
+		if (attack == 0)
+			charA -= 40;
+
+		else if (attack == 1)
+			charB -= 40;
+
+		else if (attack == 2)
+			charC -= 40;
+
+		else if (attack == 3)
+			charD -= 40;
+
+		else if (attack == 4)
+			charE -= 40;
+
+		 if (charA == 0)
+			cout << "Cannot attack player A anymore. \n";
+	
+
+	 if (charB == 0)
+			cout << "Cannot attack player B anymore. \n";
+		
+
+	 if (charC == 0)
+			cout << "Cannot attack player C anymore. \n";
+			
+
+	 if (charD == 0)
+			cout << "Cannot attack player D anymore. \n";
+			
+
+	 if (charE == 0)
+			cout << "Cannot attack player E anymore. \n";
+			
+			
+
+		
+
+
+	}
+
+
+	cout << charA << charB << charC << charD << charE;
+	cout << "\n";
+
+	system("pause");
+
+
+
 
 
 
