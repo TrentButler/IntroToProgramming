@@ -50,14 +50,7 @@ int SumTo(int N)
 
 
 
-/*Write a function named CoinToss that simulates the tossing of a coin.
-The function should use the standard library rand() function in order to generate a
-display of either “heads” or “tails”.
-The rand() can be added by adding "#include <cstflib>" to the top of your program.
-It returns a random number between 0 and 32767.
-Demonstrate the function in a program that asks the user how many times they want to
-toss the coin, and then simulates the tossing of the coin that number of times.
-*/
+
 
 int CoinToss()
 {
@@ -76,6 +69,52 @@ int CoinToss()
 
 	return 0;
 }
+
+
+int a;
+int display3;
+
+int SumArray(int integer_array[], int a)
+{
+
+
+	int test;
+	for (int i = 0; i < 5; i++)
+		display3 += integer_array[i];
+
+
+	return display3;
+
+}
+
+
+
+
+
+int b;
+int display4;
+
+int MinInArray(int integer_array[], int b)
+{
+
+	int test = integer_array[0];
+	int test2 = integer_array[0];
+	for (int j = 0; j < 7; j++)
+
+		if (test > integer_array[j])
+			test = integer_array[j];
+
+	display4 = test;
+
+
+
+
+	return display4;
+
+
+}
+
+
 
 
 
@@ -145,10 +184,10 @@ Pass the two numbers into a fuinciton and output what the funciton returns.
 		It returns a random number between 0 and 32767.
 		Demonstrate the function in a program that asks the user how many times they want to
 		toss the coin, and then simulates the tossing of the coin that number of times.
-		*/
+		
 
 	
-	/*
+	
 	cout << "Coin Toss \n";
 	cout << "How many times will the coin be tossed? \n";
 	cin >> coinFlip;
@@ -157,11 +196,10 @@ Pass the two numbers into a fuinciton and output what the funciton returns.
 	system("pause");
 	*/
 
-
-
+	
 //EXERCISE 6
-	// 6. Find the error in each of the following functions and explain how to fix them.
-	///*
+	/* 6. Find the error in each of the following functions and explain how to fix them.
+	
 	//
 	//int sum(int x, int y)
 	//{
@@ -197,10 +235,10 @@ Pass the two numbers into a fuinciton and output what the funciton returns.
 
 	//- "square(x)" is not defined.
 	//- Function is not being called, defined after "int main()".
-	
+	*/
 
 //EXERCISE 7
-
+/*
 cout << "7. Write a function called SumTo that accepts an integer parameter N and returns the sum of all integers from 1 to N, including N.";
 cout << "\n";
 cout << "\n";
@@ -212,13 +250,37 @@ std::cout << result << std::endl;
 
 
 system("pause");
-
+*/
 
 //EXERCISE 8
-// 8. Write a function that takes as its parameters an array of intergers and the size of the array and return the sum of the values in the array.
+/* 8. Write a function that takes as its parameters an array of intergers and the size of the array and return the sum of the values in the array.
+cout << "Write a function that takes as its paramethers an array of intergers \n";
+cout << " and the size of the array and return the sum. \n";
+cout << "\n";
+int integer_array[5] = { 7, 3, 2, 4, 9 };
+int result = SumArray(integer_array, 5); //result = 25
+std::cout << result << std::endl;	
+system("pause");
+
+*/
 
 
-	
+//EXERCISE 9
+/*
+//9. Write a function that takes as its parameter an array of integers and the size of the array
+//and returns the minimum of the values in the array.
+
+int integer_array[7] = { 10, 15, 7, 4, 13, 19, 8 };
+int result = MinInArray(integer_array, 7); //result = 4
+std::cout << result << std::endl;
+
+
+system("pause");
+*/
+
+
+//EXERCISE 10
+
 
 
 
