@@ -115,7 +115,28 @@ int MinInArray(int integer_array[], int b)
 }
 
 
+int MultiplyByIndex(int integer_array[], int output_array[], int c)
+{
 
+
+
+
+	output_array[0] = integer_array[0] * 0;
+	output_array[1] = integer_array[1] * 1;
+	output_array[2] = integer_array[2] * 2;
+	output_array[3] = integer_array[3] * 3;
+	output_array[4] = integer_array[4] * 4;
+	output_array[5] = integer_array[5] * 5;
+	output_array[6] = integer_array[6] * 6;
+	output_array[7] = integer_array[7] * 7;
+
+
+
+	return 0;
+
+
+
+}
 
 
 
@@ -259,7 +280,8 @@ cout << " and the size of the array and return the sum. \n";
 cout << "\n";
 int integer_array[5] = { 7, 3, 2, 4, 9 };
 int result = SumArray(integer_array, 5); //result = 25
-std::cout << result << std::endl;	
+std::cout << result << std::endl;
+	
 system("pause");
 
 */
@@ -280,10 +302,18 @@ system("pause");
 
 
 //EXERCISE 10
+/*
+Write a function that takes as its parameter an array called input_array of integers, the
+array size and a second array of the same size called output_array.Fill each element in the
+second array to be the value in the same index of input_array multiplied by its index in the
+array
+*/
 
-
-
-
+int integer_array[7] = { 10, 15, 7, 4, 13, 19, 8 };
+int output_array[7] = {};
+MultiplyByIndex(integer_array, output_array, 7);
+//output_array should be {0, 15, 14, 12, 52, 95, 48};
+return 0;
 
 
 }
