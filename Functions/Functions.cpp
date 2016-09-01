@@ -313,7 +313,8 @@ int integer_array[7] = { 10, 15, 7, 4, 13, 19, 8 };
 int output_array[7] = {};
 MultiplyByIndex(integer_array, output_array, 7);
 //output_array should be {0, 15, 14, 12, 52, 95, 48};
-return 0;
+return 0;
+
 
 
 }

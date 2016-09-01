@@ -1,3 +1,5 @@
 ﻿  Arrays.cpp
+c:\users\redtrent\documents\github\introtoprogramming\arrays\arrays.cpp(229): warning C4101: 'days': unreferenced local variable
+c:\users\redtrent\documents\github\introtoprogramming\arrays\arrays.cpp(490): warning C4552: '+': operator has no effect; expected operator with side-effect
   Arrays.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\Arrays.exe
   Arrays.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\Arrays.pdb (Partial PDB)
