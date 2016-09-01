@@ -12,7 +12,9 @@ int test = 0;
 int display = 0;
 int display1 = 0;
 int input;
-int quit = 0;
+char quit;
+
+
 
 
 
@@ -418,8 +420,8 @@ void exercise9() {
 int main()
 {
 	
-	while (quit <1) {
-		
+	while (quit != 'q') {
+
 		cout << "Choose the exercise you would like to execute... \n";
 		cout << "0.) Example of an Array. \n";
 		cout << "1.) Exercise 1 \n";
@@ -431,9 +433,9 @@ int main()
 		cout << "7.) Exercise 7 \n";
 		cout << "8.) Exercise 8 \n";
 		cout << "9.) Exercise 9 \n";
-		cout << "Exit.) Enter the number 22 to exit this program.... \n";
-		cin >> input;
+		cout << "Exit.) Press 'q' to exit this program.... \n";
 
+		cin >> input;
 
 		switch (input) {
 		case 0:
@@ -486,11 +488,6 @@ int main()
 			exercise9();
 		}
 
-		case 22:
-		{
-			quit + 22;
-			break;
-		}
 
 		default:
 		{
@@ -500,9 +497,16 @@ int main()
 		}
 
 		}
-		
+
+
+		system("pause");
+	};
+
+
+
+
 	}
-	system("pause");
+	
+	
 
 
-}

@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Functions", "Functions\Func
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Variables", "Variables\Variables.vcxproj", "{D4B58205-62C4-46F3-A2A7-4D9287BFC5DA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Zambi Project", "Zambi Project]\Zambi Project].vcxproj", "{D788F699-D066-4984-A55C-606BE57FA569}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{D4B58205-62C4-46F3-A2A7-4D9287BFC5DA}.Release|x64.Build.0 = Release|x64
 		{D4B58205-62C4-46F3-A2A7-4D9287BFC5DA}.Release|x86.ActiveCfg = Release|Win32
 		{D4B58205-62C4-46F3-A2A7-4D9287BFC5DA}.Release|x86.Build.0 = Release|Win32
+		{D788F699-D066-4984-A55C-606BE57FA569}.Debug|x64.ActiveCfg = Debug|x64
+		{D788F699-D066-4984-A55C-606BE57FA569}.Debug|x64.Build.0 = Debug|x64
+		{D788F699-D066-4984-A55C-606BE57FA569}.Debug|x86.ActiveCfg = Debug|Win32
+		{D788F699-D066-4984-A55C-606BE57FA569}.Debug|x86.Build.0 = Debug|Win32
+		{D788F699-D066-4984-A55C-606BE57FA569}.Release|x64.ActiveCfg = Release|x64
+		{D788F699-D066-4984-A55C-606BE57FA569}.Release|x64.Build.0 = Release|x64
+		{D788F699-D066-4984-A55C-606BE57FA569}.Release|x86.ActiveCfg = Release|Win32
+		{D788F699-D066-4984-A55C-606BE57FA569}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
