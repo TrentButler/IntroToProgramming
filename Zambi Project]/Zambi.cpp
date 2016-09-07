@@ -191,7 +191,7 @@ int main()
 			cout << "\n \n";
 		}
 
-		if (samsung.ki >= 16)
+		if (samsung.ki == 16)
 		{
 			cout << "\n \n";
 			cout << "The samurai can only attack once more... \n";

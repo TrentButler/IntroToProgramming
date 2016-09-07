@@ -113,6 +113,7 @@
     <ClCompile Include="Cases.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cases.h" />
     <ClInclude Include="Header.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
