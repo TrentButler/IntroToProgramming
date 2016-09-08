@@ -1,3 +1,9 @@
 ﻿  Cases.cpp
-  Cases.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\Cases.exe
-  Cases.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\Cases.pdb (Partial PDB)
+c:\users\trent.butler\documents\github\introtoprogramming\cases\cases.h(36): error C2039: 'hp': is not a member of 'Zombie'
+  c:\users\trent.butler\documents\github\introtoprogramming\cases\cases.h(9): note: see declaration of 'Zombie'
+c:\users\trent.butler\documents\github\introtoprogramming\cases\cases.h(36): error C2039: 'atk': is not a member of 'Zombie'
+  c:\users\trent.butler\documents\github\introtoprogramming\cases\cases.h(9): note: see declaration of 'Zombie'
+c:\users\trent.butler\documents\github\introtoprogramming\cases\cases.h(37): error C2039: 'job': is not a member of 'Zombie'
+  c:\users\trent.butler\documents\github\introtoprogramming\cases\cases.h(9): note: see declaration of 'Zombie'
+c:\users\trent.butler\documents\github\introtoprogramming\cases\cases.h(37): error C2039: 'atk': is not a member of 'Zombie'
+  c:\users\trent.butler\documents\github\introtoprogramming\cases\cases.h(9): note: see declaration of 'Zombie'
