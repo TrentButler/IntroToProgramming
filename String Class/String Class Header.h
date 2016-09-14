@@ -4,7 +4,7 @@
 using namespace std;
 
 // The ability to query the string’s length, returning an integer
-
+/*
 char stringLen()
 {
 	
@@ -110,7 +110,7 @@ char stringCopy()
 
 	ex2[i] = 0;
 	cout << ex2;
-
+	return 0;
 }
 
 char stringAppend()
@@ -133,7 +133,7 @@ char stringAppend()
 	}
 	
 	ex1[i] = 0;
-	*/
+	
 	cout << ex1;
 	
 	return 0;
@@ -206,17 +206,25 @@ char ABCString()
 
 }
 
+*/
 
-class stringAssignment
+
+
+class StringAssignment
 {
 public: 
-
+	StringAssignment();
+	StringAssignment(char*);
+	int stringSize();
+	char findCharacter(int);
+	bool stringCompare(StringAssignment*);
+	void stringAppend(StringAssignment, bool);
+	void stringPrepend(StringAssignment, bool);
+	void stringTolower();
+	void stringToupper();
 
 private:
-	char ex1[] = { "APPLES" };
-	char ex2[] = { "PEARS" };
-	char ex3[]
-
+	char* Apples;
 
 
 };

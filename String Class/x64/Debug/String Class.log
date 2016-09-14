@@ -1,4 +1,3 @@
-﻿  String Class.cpp
-c:\users\redtrent\documents\github\introtoprogramming\string class\string class header.h(114): warning C4715: 'stringCopy': not all control paths return a value
-  String Class.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\String Class.exe
-  String Class.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\String Class.pdb (Partial PDB)
+﻿  Main.cpp
+  String Class.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\x64\Debug\String Class.exe
+  String Class.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\x64\Debug\String Class.pdb (Partial PDB)
