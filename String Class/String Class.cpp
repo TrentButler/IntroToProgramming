@@ -41,9 +41,18 @@ int main()
 		} 
 		
 		
+		case '7':
+		{
+
+			abcString();
+			break;
+		}
 		
-		
-		
+		case '8':
+		{
+			ABCString();
+			break;
+		}
 		
 		
 		case '10': //String Copy Example

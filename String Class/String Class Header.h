@@ -36,8 +36,6 @@ char stringLen()
 	return 0; 
 }
 
-
-
 char stringPosition()
 {
 
@@ -157,7 +155,71 @@ char stringPrepend()
 }
 
 
+char abcString()
+{
 
+	char ex1[66];
+	int i = 0;
+	char a;
+	cin >> ex1[i];
+	while (ex1[i] != 0)
+	{
+		
+		a = ex1[i];
+		putchar(tolower(a));
+		i++;
+
+
+	}
+	
+	cout << ex1[i];
+	return 0;
+
+
+	
+
+}
+
+char ABCString()
+{
+
+	cout << "Convert lowercase string into a uppercase string... \n";
+	cout << "\n \n";
+	
+	
+	
+	int i = 0;
+	char a;
+	char ex1[66];
+	cout << "Please enter your string... "; cin >> ex1;
+
+	while (ex1[i] != 0)
+	{
+		a = ex1[i];
+		putchar(toupper(a));
+		i++;
+
+	}
+
+	cout << ex1[i];
+	return 0;
+
+}
+
+
+class stringAssignment
+{
+public: 
+
+
+private:
+	char ex1[] = { "APPLES" };
+	char ex2[] = { "PEARS" };
+	char ex3[]
+
+
+
+};
 
 
 
