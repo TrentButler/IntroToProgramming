@@ -77,19 +77,20 @@ int main()
 
 	*/
 
-
-
-	char input = '0';
 	StringAssignment s = StringAssignment();
-		
-	cin >> input;
+
 	
+	
+	cout << "String Class Assignment";
+	cout << " \n \n";
+	
+	char input = '0';
 
 
 	while (input != 'q')
 	{
-
-
+		
+		cin >> input;
 		switch (input)
 		{
 		case '1':
@@ -98,16 +99,40 @@ int main()
 			break;
 		}
 
-		case 'q':
+		case '2':
 		{
+			s.findCharacter(0);
 			break;
 		}
 
-
+		case '3':
+		{
+			s.stringCompare();
+				break;
 		}
-		  
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+		default:
+		{
+			break;
+		}
+		}
+			
 	}
 
+	
 
+	
+	
 }

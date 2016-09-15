@@ -1,3 +1,6 @@
-﻿  Main.cpp
+﻿  String Class.cpp
+c:\users\trent.butler\documents\github\introtoprogramming\string class\string class.cpp(82): warning C4305: 'return': truncation from 'int' to 'bool'
+  Main.cpp
+  Generating Code...
   String Class.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\x64\Debug\String Class.exe
   String Class.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\x64\Debug\String Class.pdb (Partial PDB)

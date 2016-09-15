@@ -214,17 +214,19 @@ class StringAssignment
 {
 public: 
 	StringAssignment();
-	StringAssignment(char*);
+	StringAssignment(char* a);
 	int stringSize();
 	char findCharacter(int);
-	bool stringCompare(StringAssignment*);
+	bool stringCompare();
 	void stringAppend(StringAssignment, bool);
 	void stringPrepend(StringAssignment, bool);
 	void stringTolower();
 	void stringToupper();
+	
 
 private:
 	char* Apples;
+	
 
 
 };

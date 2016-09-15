@@ -8,21 +8,25 @@ using namespace std;
 
 	StringAssignment::StringAssignment() {}
 	
-		StringAssignment::StringAssignment(char* a)
+	StringAssignment::StringAssignment(char* a)
 		{
 			Apples = a;
 		}
 	
 
 
-		int StringAssignment::stringSize()
-		{
+	int StringAssignment::stringSize()
+	{
+
+	
+		
 			cout << "Output to the user a string's length, returning an integer... \n";
 			cout << "\n \n";
 
-			int z = 0;
-			char lengthArray[] = { "Apples" }; // Declaring array with string 'Apples'.
+			
+			char lengthArray[] = { "Apples"}; // Declaring array with string 'Apples'.
 			int i = 0; //Initilizing variable 'i' to 0.
+			lengthArray[i];
 			strlen(lengthArray); // using 'strlen' to count the string 'Apples' length
 			while (lengthArray != 0) // while loop to iterate through 'lengthArray[]' until '0' or null character occurs.
 			{
@@ -38,13 +42,13 @@ using namespace std;
 
 
 			cout << lengthArray << " has " << strlen(lengthArray) << " characters in it... \n"; // Output to user string length.
-			z++;
-			return 0;
+			
+			return i;
 
 		}
 
 
-		bool StringAssignment::stringCompare(StringAssignment *string)
+		bool StringAssignment::stringCompare()
 		{
 
 			char What[] = { "What" };
@@ -93,8 +97,18 @@ using namespace std;
 		// RETURN TO THIS LATER!!!!
 		char StringAssignment::findCharacter(int index)
 		{
-
-			return 0;
+			char findCharacter[] = "Apples";
+			index = 0;
+			findCharacter[index];
+			while (findCharacter[index] != 0)
+			{
+				index++;
+				
+			}
+			
+			cout << findCharacter[3];
+			
+			return index;
 		}   
 
 		void StringAssignment::stringAppend(StringAssignment add, bool append)
