@@ -17,10 +17,14 @@ int main()
 	cout << "2.) Find Character Exercise \n";
 	cout << "3.) String Compare Exercise \n";
 	cout << "4.) String Append Exercise \n";
+	cout << "5.) String Prepend Exercise \n";
+	cout << "6.) Lowercase String Exercise \n";
+	cout << "7.) Uppercase String Exercise \n";
 
 
 
-
+	cout << "\n";
+	cout << "Enter 'q' to exit application... \n";
 	cout << "\n \n";
 	
 	char input = '0';
@@ -57,7 +61,21 @@ int main()
 
 		case '5':
 		{
+			s.stringPrepend("Hello I'm ", "Trent Butler ");
+			break;
+		}
+		
+		case '6':
+		{
+			s.stringTolower("TRENT BUTLER");
+			break;
 
+		}
+
+		case '7':
+		{
+			s.stringToupper("trent butler");
+			break;
 		}
 
 
