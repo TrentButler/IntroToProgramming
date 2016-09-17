@@ -15,20 +15,28 @@ using namespace std;
 	
 
 
-	int StringAssignment::stringSize()
+		int StringAssignment::stringSize(char *a)
 	{
 
 	
 		
 			cout << "Output to the user a string's length, returning an integer... \n";
 			cout << "\n \n";
+			char lengthArray[66]; // Declaring array with size of '66'.
+
+			for (int i = 0; i < 66; i++) // For loop to iterate through each array.
+			{
+				lengthArray[i] = a[i]; // Populating character array 'lengthArray[]' with character array 'a'.
+			}
+
+
 
 			
-			char lengthArray[] = { "Apples"}; // Declaring array with string 'Apples'.
+		
 			int i = 0; //Initilizing variable 'i' to 0.
-			lengthArray[i];
-			strlen(lengthArray); // using 'strlen' to count the string 'Apples' length
-			while (lengthArray != 0) // while loop to iterate through 'lengthArray[]' until '0' or null character occurs.
+			lengthArray[i]; //Seting array 'lengthArray[]' to 'i'.
+			strlen(lengthArray); // Using 'strlen' to count the string's length
+			while (lengthArray != 0) // While loop to iterate through 'lengthArray[]' until '0' or null character occurs.
 			{
 
 				if (lengthArray[i] == 0) // If statement to end while loop.
@@ -41,19 +49,37 @@ using namespace std;
 			}
 
 
-			cout << lengthArray << " has " << strlen(lengthArray) << " characters in it... \n"; // Output to user string length.
+			cout <<"String "<< lengthArray << " has " << strlen(lengthArray) << " characters in it... \n"; // Output to user string's length.
 			
-			return i;
+			return i; // Returning string's length, or how many times 'i' incremented.
 
 		}
 
 
-		bool StringAssignment::stringCompare()
+		bool StringAssignment::stringCompare(char *a, char *b)
 		{
+			cout << "Compare two character arrays... \n";
+			cout << "Display the string that is lexicographically first... \n";
+			cout << "\n \n";
+			
+			char What[66];
+			char When[66];
+			
+			
+			for (int i = 0; i < 66; i++)
+			{
+				What[i] = a[i];
+				When[i] = b[i];
+			}
+			
+			
 
-			char What[] = { "What" };
-			char When[] = { "When" };
-
+			
+			
+			
+			
+			
+			
 			bool running = true;
 			int i = 0;
 			strcmp(What, When);
@@ -69,7 +95,7 @@ using namespace std;
 
 				if (When[i] > What[i])
 				{
-					cout << What;
+					cout << "String " << What << " is first... \n";
 					return 1;
 
 					break;
@@ -78,7 +104,7 @@ using namespace std;
 
 				if (When[i] < What[i])
 				{
-					cout << When;
+					cout <<"String "<< When<<" is first... \n";
 					return -1;
 
 					break;
@@ -94,30 +120,42 @@ using namespace std;
 
 		}
 
-		// RETURN TO THIS LATER!!!!
-		char StringAssignment::findCharacter(int index)
+		
+		char StringAssignment::findCharacter(int a)
 		{
-			char findCharacter[] = "Apples";
-			index = 0;
-			findCharacter[index];
-			while (findCharacter[index] != 0)
+			
+			cout << "Find a specific character from a character array... \n";
+			cout << "\n \n";
+
+			
+			
+			char findCharacter[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			int i = 0;
+			findCharacter[i];
+			while (findCharacter[i] != 0)
 			{
-				index++;
+				i++;
 				
 			}
 			
-			cout << findCharacter[3];
+			cout <<"The character found was "<< findCharacter[a];
 			
-			return index;
+			return findCharacter[a];
 		}   
 
-		void StringAssignment::stringAppend(StringAssignment add, bool append)
+		void StringAssignment::stringAppend(char *a, char *b)
 		{
 
-			char ex1[14] = { "Apples" };
-			char ex2[] = { "Pears" };
+			char ex1[66]; // Setting character array 'ex1' with the size of '66'. 
+			char ex2[66]; // Setting character array 'ex2' with the size of '66'.
 
-			strcat_s(ex1, ex2);
+			for (int i = 0; i < 66; i++) // 'for' loop to iterate through each array.
+			{
+				ex1[i] = a[i]; // Populating character array 'ex1[]' with character array 'a[]'.
+				ex2[i] = b[i]; // Populating character array 'ex2[]' with character array 'b[]'.
+			}
+
+			strcat_s(ex1, ex2); // 
 			cout << ex1;
 		}
 

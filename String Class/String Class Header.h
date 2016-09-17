@@ -214,11 +214,11 @@ class StringAssignment
 {
 public: 
 	StringAssignment();
-	StringAssignment(char* a);
-	int stringSize();
+	StringAssignment(char *a);
+	int stringSize(char *a);
 	char findCharacter(int);
-	bool stringCompare();
-	void stringAppend(StringAssignment, bool);
+	bool stringCompare(char *a, char *b);
+	void stringAppend(char *a, char *b);
 	void stringPrepend(StringAssignment, bool);
 	void stringTolower();
 	void stringToupper();

@@ -8,110 +8,57 @@ using namespace std;
 int main()
 {
 
-	//char input = '0';
-
-
-	/* while (input != 'q')
-	{
-	cin >> input;
-
-	switch (input)
-	{
-	case '1': //String Length Exercise
-	{
-	stringLen();
-	break;
-	}
-
-	case '3': //String Compare Exercise
-	{
-	stringCompare();
-	break;
-	}
-
-	case '4': //String Append Exercise
-	{
-	stringAppend();
-	break;
-	}
-
-	case '5': //String Prepend Exercise
-	{
-	stringPrepend();
-	break;
-	}
-
-
-	case '7':
-	{
-
-	abcString();
-	break;
-	}
-
-	case '8':
-	{
-	ABCString();
-	break;
-	}
-
-
-	case '10': //String Copy Example
-	{
-	stringCopy();
-	break;
-	}
-
-
-
-
-
-	case 'q':
-	{
-	break;
-	}
-	}
-
-
-	}
-
-	*/
-
 	StringAssignment s = StringAssignment();
 
 	
-	
 	cout << "String Class Assignment";
 	cout << " \n \n";
+	cout << "1.) String Size Exercise \n";
+	cout << "2.) Find Character Exercise \n";
+	cout << "3.) String Compare Exercise \n";
+	cout << "4.) String Append Exercise \n";
+
+
+
+
+	cout << "\n \n";
 	
 	char input = '0';
-
-
 	while (input != 'q')
 	{
 		
-		cin >> input;
+		cout << "\n"; cin >> input;
+		system("cls");
 		switch (input)
 		{
 		case '1':
 		{
-			s.stringSize();
+			s.stringSize("abcdefghijklmnopqrstuvwxyz");
 			break;
 		}
 
 		case '2':
 		{
-			s.findCharacter(0);
+			s.findCharacter(2);
 			break;
 		}
 
 		case '3':
 		{
-			s.stringCompare();
-				break;
+			s.stringCompare("abcdefghijk", "abcdefghi");
+			break;
 		}
 
+		case '4':
+		{
+			s.stringAppend("Hello I'm ", "Trent Butler");
+			break;
+		}
 
+		case '5':
+		{
+
+		}
 
 
 
