@@ -37,19 +37,19 @@ int main()
 		{
 		case '1':
 		{
-			s.stringSize("abcdefghijklmnopqrstuvwxyz");
+			s.stringSize();
 			break;
 		}
 
 		case '2':
 		{
-			s.findCharacter(2);
+			s.findCharacter(6);
 			break;
 		}
 
 		case '3':
 		{
-			s.stringCompare("abcdefghijk", "abcdefghi");
+			s.stringCompare();
 			break;
 		}
 
@@ -97,6 +97,14 @@ int main()
 	}
 
 	
+	
+
+
+
+
+
+
+
 
 	
 	

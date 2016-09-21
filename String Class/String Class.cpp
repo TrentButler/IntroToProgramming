@@ -5,24 +5,25 @@ using namespace std;
 
 
 
-
-		StringAssignment::StringAssignment() {}
-	
-		StringAssignment::StringAssignment(char* a)
-		{
-			Apples = a;
-		}
-	
-		int StringAssignment::stringSize(char *a)
+StringAssignment a = StringAssignment();
+StringAssignment::StringAssignment(char *test)
 	{
-				
+		test = apples;
+	}
+
+
+			
+		
+		int StringAssignment::stringSize()
+	{
+			
 			cout << "Output to the user a string's length, returning an integer... \n";
 			cout << "\n \n";
 			char lengthArray[66]; // Declaring array with size of '66'.
 
 			for (int i = 0; i < 66; i++) // For loop to iterate through each array.
 			{
-				lengthArray[i] = a[i]; // Populating character array 'lengthArray[]' with character array 'a'.
+				lengthArray[i] = a.apples[i]; // Populating character array 'lengthArray[]' with character array 'a'.
 			}
 	
 			int i = 0; //Initilizing variable 'i' to 0.
@@ -49,7 +50,7 @@ using namespace std;
 
 		}
 		
-		bool StringAssignment::stringCompare(char *a, char *b)
+		bool StringAssignment::stringCompare()
 		{
 			cout << "Compare two character arrays... \n";
 			cout << "Display the string that is lexicographically first... \n";
@@ -61,8 +62,8 @@ using namespace std;
 			
 			for (int i = 0; i < 66; i++) // 'for' loop to iterate through each array.
 			{
-				ex1[i] = a[i]; // Populating array 'ex1[]' with array 'a[]'.
-				ex2[i] = b[i]; // Population array 'ex2[]' with array 'b[]'.
+				ex1[i] = a.pears[i]; // Populating array 'ex1[]' with array 'a[]'.
+				ex2[i] = a.apples[i]; // Population array 'ex2[]' with array 'b[]'.
 			}
 								
 			bool running = true; // 'bool' statement for while loop.

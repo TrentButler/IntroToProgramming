@@ -6,11 +6,13 @@ using namespace std;
 class StringAssignment
 {
 public: 
-	StringAssignment();
-	StringAssignment(char *a);
-	int stringSize(char *a);
+	StringAssignment() {};
+	StringAssignment(char *test);
+	
+
+	int stringSize();
 	char findCharacter(int);
-	bool stringCompare(char *a, char *b);
+	bool stringCompare();
 	void stringAppend(char *a, char *b);
 	void stringPrepend(char *a, char *b);
 	void stringTolower(char *a);
@@ -18,7 +20,9 @@ public:
 	
 
 private:
-	char* Apples;
+
+	char apples[66] = { "TEST" };
+	char pears[66] = { "Second TEST" };
 	
 
 
