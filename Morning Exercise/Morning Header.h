@@ -3,52 +3,22 @@
 #include <iostream>
 using namespace std;
 
+// Create a function that takes in a character array and reverses the string stored inside of it. 
 
-float Times5()
+void arraySwap(char *a)
 {
-
-	float ex1 = 2.2;
-	float ex2 = 4.3;
-	float ex3 = 43.3;
-	float five = 5;
-
-	cout << "Enter 3 numbers to be multiplied by 5... \n";
-	cout << "\n \n";
-	cout << "Enter first choice "; cin >> ex1;
-	ex1 * five;
-	cout << "\n \n";
-	cout << "Enter second choice "; cin >> ex2;
-	ex2 * five;
-	cout << "\n \n";
-	cout << "Enter third choice "; cin >> ex3;
-	ex3 * five;
-
-	cout << "Values returned are: \n";
-	cout << "\n \n";
-	cout << "First choice: " << ex1 << " \n";
-	cout << "Second choice: " << ex2 << " \n";
-	cout << "Third choice: " << ex3 << " \n";
+	char ex1[66];
+	char ex2[66];
+	for (int i = 0; i < 66;i++)
+	{
+		ex1[i] = a[i];
+		-ex1[i];
+	}
 	
-
-
-
-
-
-	return 1;
-
-
+	
+	
+	cout << ex1;
 }
 
 
 
-
-
-
-float Mult5(float a, float b, float c)
-{
-	
-	
-	return (a + b + c) * 5;
-
-
-}

@@ -1,9 +1,5 @@
 ﻿  Main.cpp
-c:\users\trent.butler\documents\github\introtoprogramming\morning exercise\morning header.h(10): warning C4305: 'initializing': truncation from 'double' to 'float'
-c:\users\trent.butler\documents\github\introtoprogramming\morning exercise\morning header.h(11): warning C4305: 'initializing': truncation from 'double' to 'float'
-c:\users\trent.butler\documents\github\introtoprogramming\morning exercise\morning header.h(12): warning C4305: 'initializing': truncation from 'double' to 'float'
-c:\users\trent.butler\documents\github\introtoprogramming\morning exercise\morning header.h(18): warning C4552: '*': operator has no effect; expected operator with side-effect
-c:\users\trent.butler\documents\github\introtoprogramming\morning exercise\morning header.h(21): warning C4552: '*': operator has no effect; expected operator with side-effect
-c:\users\trent.butler\documents\github\introtoprogramming\morning exercise\morning header.h(24): warning C4552: '*': operator has no effect; expected operator with side-effect
+c:\users\trent.butler\documents\github\introtoprogramming\morning exercise\morning header.h(15): warning C4552: '-': operator has no effect; expected operator with side-effect
+c:\users\trent.butler\documents\github\introtoprogramming\morning exercise\morning header.h(11): warning C4101: 'ex2': unreferenced local variable
   Morning Exercise.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\x64\Debug\Morning Exercise.exe
   Morning Exercise.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\x64\Debug\Morning Exercise.pdb (Partial PDB)

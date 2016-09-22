@@ -1,5 +1,4 @@
-﻿cl : Command line warning D9028: minimal rebuild failure, reverting to normal build
-  Functions.cpp
-c:\users\redtrent\documents\github\introtoprogramming\functions\functions.cpp(81): warning C4101: 'test': unreferenced local variable
-  Functions.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\Functions.exe
-  Functions.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\Functions.pdb (Partial PDB)
+﻿  Functions.cpp
+c:\users\trent.butler\documents\github\introtoprogramming\functions\functions.cpp(81): warning C4101: 'test': unreferenced local variable
+  Functions.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\x64\Debug\Functions.exe
+  Functions.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\x64\Debug\Functions.pdb (Partial PDB)
