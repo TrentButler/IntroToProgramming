@@ -1,6 +1,4 @@
 ﻿  String Class.cpp
-c:\users\trent.butler\documents\github\introtoprogramming\string class\string class.cpp(90): warning C4305: 'return': truncation from 'int' to 'bool'
-  Main.cpp
-  Generating Code...
-  String Class.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\x64\Debug\String Class.exe
-  String Class.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\x64\Debug\String Class.pdb (Partial PDB)
+c:\users\trent.butler\documents\github\introtoprogramming\string class\string class.cpp(72): warning C4305: 'return': truncation from 'int' to 'bool'
+c:\users\trent.butler\documents\github\introtoprogramming\string class\string class.cpp(143): error C2440: 'return': cannot convert from 'char [266]' to 'int'
+  c:\users\trent.butler\documents\github\introtoprogramming\string class\string class.cpp(143): note: There is no context in which this conversion is possible

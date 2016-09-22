@@ -8,14 +8,20 @@ using namespace std;
 int main()
 {
 
-	StringAssignment s = StringAssignment();
-		
-	s.stringInput();
-	s.stringSize();
-	s.findCharacter(4);
-	s.stringCompare();
-	/*s.stringAppend();
-	s.stringToupper();*/
+	StringAssignment s = StringAssignment("Trent Butler");
+	StringAssignment string = StringAssignment(" Goodbye!"); // use this instead of "goodbye" in the function call...
+	s.Length();
+	s.stringCompare("GoodBYE");
+	s.findCharacter(2);
+	s.stringAppend(" Goodbye!");
+	s.stringPrepend("Hello I'm ");
+	
+	//s.stringInput();
+
+	
+
+	
+	////s.stringToupper();
 
 	
 	cout << "\n";

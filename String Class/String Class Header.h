@@ -6,24 +6,30 @@ using namespace std;
 class StringAssignment
 {
 public:
-	StringAssignment() {};
+	StringAssignment() {}
+	StringAssignment(char *test);
 	
-	
-	int stringSize();
+	int Length();
+	bool stringCompare(char *z);
 	char findCharacter(int);
-	bool stringCompare();
-	void stringAppend();
-	void stringPrepend(char *a, char *b);
+	int stringAppend(char *a);
+	int stringPrepend(char *b);
+	int stringlength(char *z);
+	/*
 	void stringTolower(char *a);
 	void stringToupper();
 	void stringInput();
+	*/
+
+	
+
+	
 
 
 private:
 
-	char apples[266];
-	char pears[266];
-	int stringLength;
+	char t_data[266];
+
 
 
 
