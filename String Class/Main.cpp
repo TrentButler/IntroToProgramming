@@ -10,7 +10,7 @@ int main()
 
 	StringAssignment s = StringAssignment();
 
-	
+	/*
 	cout << "String Class Assignment";
 	cout << " \n \n";
 	cout << "1.) String Size Exercise \n";
@@ -26,8 +26,8 @@ int main()
 	cout << "\n";
 	cout << "Enter 'q' to exit application... \n";
 	cout << "\n \n";
-	
-	char input = '0';
+	*/
+	/*char input = '0';
 	while (input != 'q')
 	{
 		
@@ -78,6 +78,8 @@ int main()
 			break;
 		}
 
+		
+
 
 
 
@@ -94,18 +96,26 @@ int main()
 		}
 		}
 			
-	}
+	}*/
 
 	
+
+	//Make input from test 1, test 2 populate arrays 'apples' and 'pears'.
+
+
 	
+	s.stringInput();
+	s.stringSize();
+	s.findCharacter(4);
+	s.stringCompare();
+	s.stringAppend();
+	s.stringToupper();
 
 
 
 
-
-
-
-
+	cout << "\n";
+	system("pause");
 	
 	
 }

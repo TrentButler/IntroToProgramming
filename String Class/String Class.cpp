@@ -5,32 +5,33 @@ using namespace std;
 
 
 
-StringAssignment a = StringAssignment();
-StringAssignment::StringAssignment(char *test)
+		StringAssignment a = StringAssignment();
+		StringAssignment::StringAssignment(char *test)
 	{
 		test = apples;
 	}
-
-
+		
 			
 		
 		int StringAssignment::stringSize()
 	{
 			
-			cout << "Output to the user a string's length, returning an integer... \n";
-			cout << "\n \n";
-			char lengthArray[66]; // Declaring array with size of '66'.
-
-			for (int i = 0; i < 66; i++) // For loop to iterate through each array.
+			cout << "\n";
+			char lengthArray[266]; // Declaring array with size of '66'.
+			
+			for (int i = 0; i < 266; i++) // For loop to iterate through each array.
 			{
 				lengthArray[i] = a.apples[i]; // Populating character array 'lengthArray[]' with character array 'a'.
+				
 			}
-	
+			
+			
+
 			int i = 0; //Initilizing variable 'i' to 0.
 			
 			lengthArray[i]; //Seting array 'lengthArray[]' to 'i'.
 			
-			strlen(lengthArray); // Using 'strlen' to count the string's length
+			
 			
 			while (lengthArray != 0) // While loop to iterate through 'lengthArray[]' until '0' or null character occurs.
 			{
@@ -40,25 +41,24 @@ StringAssignment::StringAssignment(char *test)
 					break;
 				}
 				i++; // incrementing i.
-
+				
 
 			}
 			
-			cout <<"String "<< lengthArray << " has " << strlen(lengthArray) << " characters in it... \n"; // Output to user string's length.
+			cout <<"String "<< lengthArray << " has " << i << " characters in it... \n"; // Output to user string's length.
 			
+			cout << "\n \n";
 			return i; // Returning string's length, or how many times 'i' incremented.
+			
 
 		}
 		
 		bool StringAssignment::stringCompare()
 		{
-			cout << "Compare two character arrays... \n";
-			cout << "Display the string that is lexicographically first... \n";
-			cout << "\n \n";
+			cout << "\n";
 			
 			char ex1[66]; // Setting character array 'ex1[]' with the size of '66'.
 			char ex2[66]; // Setting character array 'ex2' with the size of '66'.
-			
 			
 			for (int i = 0; i < 66; i++) // 'for' loop to iterate through each array.
 			{
@@ -103,47 +103,48 @@ StringAssignment::StringAssignment(char *test)
 
 
 			}
+			cout << "\n \n";
 
 
 		}
 				
-		char StringAssignment::findCharacter(int a)
+		char StringAssignment::findCharacter(int z)
 		{
 			
-			cout << "Find a specific character from a character array... \n";
-			cout << "\n \n";
-						
-			char findCharacter[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // Setting character array 'findCharacter[]' with the string 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.
-			int i = 0; // Initlizing 'i' to '0'.
-			findCharacter[i]; // Setting character array 'findCharacter[]' to 'i'.
-			while (findCharacter[i] != 0) // 'While' loop to populate character array 'findCharacter[]'.
+									
+			char findCharacter[266]; // Setting character array 'findCharacter[]' with the string 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.
+			
+			
+			for (int i = 0; i < 266; i++)
 			{
-				i++; // Incrementing 'i' until null character is reached (0) or (\0).
-				
+				findCharacter[i] = a.apples[i];
+
 			}
 			
-			cout <<"The character found was "<< findCharacter[a];
+			cout <<"The character found was "<< findCharacter[z];
+			cout << "\n \n";
 			
-			return findCharacter[a]; // Returning character from character array 'findCharacter[]'. 
+			return findCharacter[z]; // Returning character from character array 'findCharacter[]'. 
 		}   
 
-		void StringAssignment::stringAppend(char *a, char *b)
+		void StringAssignment::stringAppend()
 		{
-
-			char ex1[66]; // Setting character array 'ex1' with the size of '66'. 
-			char ex2[66]; // Setting character array 'ex2' with the size of '66'.
-
-			for (int i = 0; i < 66; i++) // 'for' loop to iterate through each array.
+			
+			int orgLength = a.stringLength;
+			int z;
+			for (z = 0; a.stringLength; ++z)
 			{
-				ex1[i] = a[i]; // Populating character array 'ex1[]' with character array 'a[]'.
-				ex2[i] = b[i]; // Populating character array 'ex2[]' with character array 'b[]'.
+				a.apples[orgLength + z] = a.apples[z];
+
+			}
+			a.pears[orgLength + z] = 0;
+			//cout << "APPEND: ";
+			for (int i = 0; a.apples[i] != 0; i++)
+			{
+				a.apples[i];
 			}
 
-			strcat_s(ex1, ex2); // Using function 'strcat' to append character array 'ex2[]' to character array 'ex1[]'.
-			cout << ex1; // Display to user character array 'ex1[]' with added character array 'ex2'.
-			cout << "\n \n";
-			cout << "Press 'q' to exit... \n";
-
+			cout << a.apples << "\n \n";
 		}
 
 		void StringAssignment::stringPrepend(char *a, char *b)
@@ -200,30 +201,28 @@ StringAssignment::StringAssignment(char *test)
 
 		}
 
-		void StringAssignment::stringToupper(char *a)
+		void StringAssignment::stringToupper()
 		{
 			cout << "Convert lowercase string into a uppercase string... \n";
 			cout << "\n \n";
-			
-			char ex1[66]; // Setting character array 'ex1[]' with the size of '66'.
-
-			for (int i = 0; i < 66; i++) // 'For' loop to iterate through the arrray.
+			char display;
+			char ex1[266]; // Setting character array 'ex1[]' with the size of '66'.
+			for (int i = 0; i < 266; i++)
 			{
-				ex1[i] = a[i]; // Populating character array 'ex1' with character array 'a[]'.
+				ex1[i] = a.apples[i];
 			}
 			
-			int i = 0; // Initlizing integer 'i' to '0'.
-			char b; // Initlizing character 'b'.
-			
-			while (ex1[i] != 0) // 'While' loop to iterate through the arrays
+			for (int x = 0; x < a.stringLength; ++x)
 			{
-				b = ex1[i]; // Assigning character 'b' the character array 'ex1[i]'.
-				putchar(toupper(b)); // Using function (toupper) to convert character array 'b' to upperchase.
-				i++; // Incrementing integer 'i'.
-
+				if ((char)a.apples[x] > 64 && (char)a.apples[x] < 91)
+				{
+					a.apples[x] = a.apples[x] + 32;
+					display = a.apples[x];
+				}
+				
 			}
 
-			cout << ex1[i]; // Display to user character array 'ex1[i]'.
+			 // Display to user character array 'ex1[i]'.
 			cout << "\n \n";
 			cout << "Press 'q' to exit... \n";
 
@@ -232,7 +231,27 @@ StringAssignment::StringAssignment(char *test)
 
 
 
+		void StringAssignment::stringInput()
+		{
+			char Test1[266];
+			char Test2[266];
+			cin >> Test1;
+			cin >> Test2;
 
+			for (int i = 0; i < 266; i++)
+			{
+				a.apples[i] = Test1[i];
+				a.pears[i] = Test2[i];
+
+			}
+				
+			
+			
+		}
+
+
+
+	
 
 
 

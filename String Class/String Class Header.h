@@ -13,16 +13,18 @@ public:
 	int stringSize();
 	char findCharacter(int);
 	bool stringCompare();
-	void stringAppend(char *a, char *b);
+	void stringAppend();
 	void stringPrepend(char *a, char *b);
 	void stringTolower(char *a);
-	void stringToupper(char *a);
+	void stringToupper();
+	void stringInput();
 	
 
 private:
 
-	char apples[66] = { "TEST" };
-	char pears[66] = { "Second TEST" };
+	char apples[266];
+	char pears[266];
+	int stringLength;s
 	
 
 
