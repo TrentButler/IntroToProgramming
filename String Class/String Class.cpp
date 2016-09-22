@@ -6,18 +6,14 @@ using namespace std;
 
 
 		StringAssignment a = StringAssignment();
-		StringAssignment::StringAssignment(char *test)
-	{
-		test = apples;
-	}
-		
+	
 			
 		
 		int StringAssignment::stringSize()
 	{
 			
 			cout << "\n";
-			char lengthArray[266]; // Declaring array with size of '66'.
+			char lengthArray[266]; // Declaring array with size of '266'.
 			
 			for (int i = 0; i < 266; i++) // For loop to iterate through each array.
 			{
@@ -57,8 +53,8 @@ using namespace std;
 		{
 			cout << "\n";
 			
-			char ex1[66]; // Setting character array 'ex1[]' with the size of '66'.
-			char ex2[66]; // Setting character array 'ex2' with the size of '66'.
+			char ex1[66]; // Setting character array 'ex1[]' with the size of '266'.
+			char ex2[66]; // Setting character array 'ex2' with the size of '266'.
 			
 			for (int i = 0; i < 66; i++) // 'for' loop to iterate through each array.
 			{
@@ -68,7 +64,7 @@ using namespace std;
 								
 			bool running = true; // 'bool' statement for while loop.
 			int i = 0; // Initlizing 'i' to '0'.
-			strcmp(ex1, ex2); // Using function 'strcmp' to compare arrays 'ex1' and 'ex2'.
+			
 			while (true) // 'While' loop to compare arrays 'ex1[]' and 'ex2[]'.
 			{
 				if (ex2[i] == 0 && ex1[i] == 0) // 'If' statement comparing both arrays, (if ex1 and ex2 are equal).
@@ -112,8 +108,7 @@ using namespace std;
 		{
 			
 									
-			char findCharacter[266]; // Setting character array 'findCharacter[]' with the string 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.
-			
+			char findCharacter[266]; // Setting character array 'findCharacter[]' with the size of 266.
 			
 			for (int i = 0; i < 266; i++)
 			{
@@ -149,8 +144,8 @@ using namespace std;
 
 		void StringAssignment::stringPrepend(char *a, char *b)
 		{
-			char ex1[66]; // Setting character array 'ex1' with size of '66'.
-			char ex2[66]; // Setting character array 'ex2' with size of '66'.
+			char ex1[66]; // Setting character array 'ex1' with size of '266'.
+			char ex2[66]; // Setting character array 'ex2' with size of '266'.
 
 			for (int i = 0; i < 66; i++) // 'for' loop to iterate through each array.
 			{
@@ -163,7 +158,7 @@ using namespace std;
 
 			cout << ex2; // Display to user character array 'ex2[]' with added character array 'ex1'.
 			cout << "\n \n";
-			cout << "Press 'q' to exit... \n";
+		
 
 			
 
@@ -173,7 +168,7 @@ using namespace std;
 		{
 			cout << "Convert uppercase string to lowercase string... \n";
 			cout << "\n \n";
-			char ex1[66]; // Setting character array 'ex1[]' with the size of '66'.
+			char ex1[66]; // Setting character array 'ex1[]' with the size of '266'.
 
 			for (int i = 0; i < 66; i++) // 'For' loop to iterate through character arrays.
 			{
@@ -196,7 +191,7 @@ using namespace std;
 
 			cout << ex1[i]; // Display to user character array 'ex1[]'.
 			cout << "\n \n";
-			cout << "Press 'q' to exit... \n";
+		
 			
 
 		}
@@ -224,7 +219,7 @@ using namespace std;
 
 			 // Display to user character array 'ex1[i]'.
 			cout << "\n \n";
-			cout << "Press 'q' to exit... \n";
+		
 
 			
 		}

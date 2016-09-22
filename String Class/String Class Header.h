@@ -5,11 +5,10 @@ using namespace std;
 
 class StringAssignment
 {
-public: 
+public:
 	StringAssignment() {};
-	StringAssignment(char *test);
 	
-
+	
 	int stringSize();
 	char findCharacter(int);
 	bool stringCompare();
@@ -18,14 +17,14 @@ public:
 	void stringTolower(char *a);
 	void stringToupper();
 	void stringInput();
-	
+
 
 private:
 
 	char apples[266];
 	char pears[266];
-	int stringLength;s
-	
+	int stringLength;
+
 
 
 };
