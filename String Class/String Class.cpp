@@ -6,6 +6,7 @@ using namespace std;
 
 
 
+
 StringAssignment::StringAssignment(char *test)
 {
 	for (int i = 0; i < 266; i++)
@@ -37,19 +38,19 @@ int StringAssignment::Length()
 		i++;
 	}
 	
+	
 	return i;
 
 }
 
-bool StringAssignment::stringCompare(char *z)
+bool StringAssignment::Compare(StringAssignment a)
 {
-	
 	bool running = true; // 'bool' statement for while loop.
 	int i = 0; // Initlizing 'i' to '0'.
 
 	while (true) // 'While' loop to compare arrays 'ex1[]' and 'ex2[]'.
 	{
-		if (t_data[i] == 0 && z[i] == 0) // 'If' statement comparing both arrays, (if ex1 and ex2 are equal).
+		if (t_data[i] == 0 && a.t_data[i] == 0) // 'If' statement comparing both arrays, (if ex1 and ex2 are equal).
 		{
 			cout << "The strings are identical... \n \n";
 			return 0;
@@ -57,16 +58,16 @@ bool StringAssignment::stringCompare(char *z)
 			break;
 		}
 
-		if (t_data[i] > z[i]) // 'If' statement comparing both arrays, (if ex2 is greater than ex1).
+		if (t_data[i] > a.t_data[i]) // 'If' statement comparing both arrays, (if ex2 is greater than ex1).
 		{
-			cout << "String " << t_data << " is first... \n \n";
+			cout << "String " << a.t_data << " is first... \n \n";
 			return 1;
 
 			break;
 
 		}
 
-		if (t_data[i] < z[i]) // 'If' statement comparing both arrays, (if ex2 is less than ex1)
+		if (t_data[i] < a.t_data[i]) // 'If' statement comparing both arrays, (if ex2 is less than ex1)
 		{
 			cout << "String " << t_data << " is first... \n \n";
 			return -1;
@@ -103,15 +104,15 @@ char StringAssignment::findCharacter(int z)
 	return t_data[z]; // Returning character from character array 'findCharacter[]'. 
 }
 
-int StringAssignment::stringAppend(char *a)
+int StringAssignment::Append(StringAssignment a)
 {
 	
 	int i = stringlength(t_data); // destination
 	int j = 0; // source
 
-	while (a[j] != 0)
+	while (a.t_data[j] != 0)
 	{
-		t_data[i] = a[j];
+		t_data[i] = a.t_data[j];
 		++i;
 		++j;
 	}
@@ -123,138 +124,138 @@ int StringAssignment::stringAppend(char *a)
 	
 }
 
-
-
-int StringAssignment::stringPrepend(char *b)
+int StringAssignment::Prepend(StringAssignment a)
 {
-	cout << "\n";
-	int i = (stringlength(t_data)*0); // destination
-	int j = 0; // source
-	t_data[i] = 0;
-	while (b[j] != 0)
-	{
-		t_data[i] = b[j];
-		++i;
-		j++;
-	}
-
 	
-	cout << t_data;
+	cout << "\n";
+	int i = stringlength(t_data); // destination
+	int j = 0; // source
+	
+	
+	while (a.t_data[j] != 0)
+	{
+		t_data[i] = a.t_data[j];
+		++j;
+		i++;
+	}
+	t_data[j] = 0;
+	
+	cout << t_data; // destination
 	return i;
 	
 
 }
 
+char StringAssignment::ToLower()
+{
+	int i = 0;
+	while(t_data[i]!=0)
+	{
+		if ((int)t_data[i] > 65 && (int)t_data[i] < 90)
+		{
+			t_data[i] = t_data[i] + 32;
+		}
+		i++;
+	}
+	
+	
+	return *t_data; //fix this!!!!!!
+
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//void StringAssignment::stringTolower(char *a)
+//void StringAssignment::ToUpper()
 //{
-//	cout << "Convert uppercase string to lowercase string... \n";
-//	cout << "\n \n";
-//	char ex1[66]; // Setting character array 'ex1[]' with the size of '266'.
-
-//	for (int i = 0; i < 66; i++) // 'For' loop to iterate through character arrays.
-//	{
-//		ex1[i] = a[i]; // Populating character array 'ex1[]' with character array 'a[]'.
-//	}
-//	
 //	
 //
-//	char b; // Initlizing character 'b'.
-//	int i = 0; // Initlizing integer 'i' to '0'.
-//	
-//	while (ex1[i] != 0) // 'While' loop to populate character array 'ex1[]'.
+//	int i = 0;
+//	for (int i = 0; i < stringlength(t_data); i++)
 //	{
-
-//		b = ex1[i]; // Assigning character 'b' the character array 'ex1[i]'.
-//		putchar(tolower(b)); // Using function (tolower) to convert character array to lowercase.
-//		i++; // Incrementing 'i'.
-//		
-//	}
-
-//	cout << ex1[i]; // Display to user character array 'ex1[]'.
-//	cout << "\n \n";
-//
-//	
-
-//}
-
-//void StringAssignment::stringToupper()
-//{
-//	cout << "Convert lowercase string into a uppercase string... \n";
-//	cout << "\n \n";
-//	char display;
-//	char ex1[266]; // Setting character array 'ex1[]' with the size of '66'.
-//	for (int i = 0; i < 266; i++)
-//	{
-//		ex1[i] = a.apples[i];
-//	}
-//	
-//	for (int x = 0; x < a.stringLength; ++x)
-//	{
-//		if ((char)a.apples[x] > 64 && (char)a.apples[x] < 91)
+//		if ((int)t_data[i] >  && (int)t_data[i] < 90)
 //		{
-//			a.apples[x] = a.apples[x] + 32;
-//			display = a.apples[x];
+//			t_data[i] = t_data[i] + 32;
 //		}
-//		
 //	}
-
-//	 // Display to user character array 'ex1[i]'.
-//	cout << "\n \n";
 //
-
+//
+//	return t_data[i];
 //	
 //}
 
 
 
-//void StringAssignment::stringInput()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//char StringAssignment::stringInput()
 //{
 //	char Test1[266];
-//	char Test2[266];
+//
 //	cin >> Test1;
-//	cin >> Test2;
-
+//
+//
 //	for (int i = 0; i < 266; i++)
 //	{
-//		a.apples[i] = Test1[i];
-//		a.pears[i] = Test2[i];
-
+//		t_data[i]=Test1[i];
+//
 //	}
-//		
-//	
-//	
+//
+//
+//
 //}
+//
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

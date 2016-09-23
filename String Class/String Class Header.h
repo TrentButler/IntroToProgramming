@@ -9,18 +9,22 @@ public:
 	StringAssignment() {}
 	StringAssignment(char *test);
 	
+	
 	int Length();
-	bool stringCompare(char *z);
+	bool Compare(StringAssignment a);
 	char findCharacter(int);
-	int stringAppend(char *a);
-	int stringPrepend(char *b);
+	int Append(StringAssignment a);
+	int Prepend(StringAssignment a);
 	int stringlength(char *z);
-	/*
-	void stringTolower(char *a);
-	void stringToupper();
-	void stringInput();
-	*/
+	
+	char ToLower();
+	/*char stringToupper();*/
 
+	
+	
+
+	
+	/*void stringInput();*/
 	
 
 	

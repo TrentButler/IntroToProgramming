@@ -7,17 +7,35 @@ using namespace std;
 
 int main()
 {
-
-	StringAssignment s = StringAssignment("Trent Butler");
-	StringAssignment string = StringAssignment(" Goodbye!"); // use this instead of "goodbye" in the function call...
-	s.Length();
-	s.stringCompare("GoodBYE");
-	s.findCharacter(2);
-	s.stringAppend(" Goodbye!");
-	s.stringPrepend("Hello I'm ");
+	StringAssignment z = StringAssignment("One");
+	StringAssignment s = StringAssignment("Two");
 	
-	//s.stringInput();
+	
+	
+	
+	cout << "String has " << s.Length() << " characters... \n";
+	cout << "String has " << z.Length() << " characters... \n";
+	
+	
+	z.Compare(s);
+	s.findCharacter(2);
+	z.findCharacter(2);
 
+	/*z.Append(s);
+
+	s.Prepend(z); 
+*/
+	cout << s.ToLower()<<"\n";
+
+	cout << z.ToLower()<<"\n";
+	
+	
+	
+	
+	
+	
+	
+	/*z.stringInput();*/
 	
 
 	
