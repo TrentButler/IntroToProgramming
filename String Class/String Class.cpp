@@ -87,7 +87,7 @@ bool StringAssignment::Compare(StringAssignment a)
 
 }
 
-char StringAssignment::findCharacter(int z)
+char StringAssignment::characterAtIndex(int z)
 {
 	
 	cout << "\n";
@@ -104,7 +104,7 @@ char StringAssignment::findCharacter(int z)
 	return t_data[z]; // Returning character from character array 'findCharacter[]'. 
 }
 
-int StringAssignment::Append(StringAssignment a)
+char * StringAssignment::Append(StringAssignment a)
 {
 	
 	int i = stringlength(t_data); // destination
@@ -118,13 +118,11 @@ int StringAssignment::Append(StringAssignment a)
 	}
 
 	t_data[i] = 0;
-	cout << t_data;
-	cout << "\n";
-	return i;
+	return t_data;
 	
 }
 
-int StringAssignment::Prepend(StringAssignment a)
+char * StringAssignment::Prepend(StringAssignment a)
 {
 	
 	cout << "\n";
@@ -135,23 +133,24 @@ int StringAssignment::Prepend(StringAssignment a)
 	while (a.t_data[j] != 0)
 	{
 		t_data[i] = a.t_data[j];
-		++j;
-		i++;
+		++j; // Increment source before destination
+		i++; 
 	}
+	
 	t_data[j] = 0;
 	
-	cout << t_data; // destination
-	return i;
+	
+	return t_data;
 	
 
 }
 
-char StringAssignment::ToLower()
+char * StringAssignment::ToLower()
 {
 	int i = 0;
 	while(t_data[i]!=0)
 	{
-		if ((int)t_data[i] > 65 && (int)t_data[i] < 90)
+		if ((int)t_data[i] >= 65 && (int)t_data[i] <= 90)
 		{
 			t_data[i] = t_data[i] + 32;
 		}
@@ -159,28 +158,49 @@ char StringAssignment::ToLower()
 	}
 	
 	
-	return *t_data; //fix this!!!!!!
+	return t_data;
+
+}
+
+char * StringAssignment::ToUpper()
+{
+	
+
+	int i = 0;
+	while(t_data[i]!=0)
+	{
+		if ((int)t_data[i] >= 97 && (int)t_data[i] <= 122 )
+		{
+			t_data[i] = t_data[i] - 32;
+		}
+		i++;
+	}
+
+
+	return t_data;
+	
+}
+
+
+
+char * StringAssignment::stringInput()
+{
+	char Test1[266];
+
+	cin >> Test1;
+
+
+	for (int i = 0; i < 266; i++)
+	{
+		t_data[i] = Test1[i];
+
+	}
+
+	return Test1;
 
 }
 
 
-//void StringAssignment::ToUpper()
-//{
-//	
-//
-//	int i = 0;
-//	for (int i = 0; i < stringlength(t_data); i++)
-//	{
-//		if ((int)t_data[i] >  && (int)t_data[i] < 90)
-//		{
-//			t_data[i] = t_data[i] + 32;
-//		}
-//	}
-//
-//
-//	return t_data[i];
-//	
-//}
 
 
 
@@ -205,25 +225,7 @@ char StringAssignment::ToLower()
 
 
 
-//
-//char StringAssignment::stringInput()
-//{
-//	char Test1[266];
-//
-//	cin >> Test1;
-//
-//
-//	for (int i = 0; i < 266; i++)
-//	{
-//		t_data[i]=Test1[i];
-//
-//	}
-//
-//
-//
-//}
-//
-//
+
 
 
 

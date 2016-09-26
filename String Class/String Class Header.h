@@ -8,23 +8,18 @@ class StringAssignment
 public:
 	StringAssignment() {}
 	StringAssignment(char *test);
-	
-	
+		
 	int Length();
 	bool Compare(StringAssignment a);
-	char findCharacter(int);
-	int Append(StringAssignment a);
-	int Prepend(StringAssignment a);
+	char characterAtIndex(int);
+	char * Append(StringAssignment a);
+	char * Prepend(StringAssignment a);
 	int stringlength(char *z);
 	
-	char ToLower();
-	/*char stringToupper();*/
-
+	char * ToLower();
+	char * ToUpper();
 	
-	
-
-	
-	/*void stringInput();*/
+	char * stringInput();
 	
 
 	

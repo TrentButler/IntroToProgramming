@@ -7,8 +7,8 @@ using namespace std;
 
 int main()
 {
-	StringAssignment z = StringAssignment("One");
-	StringAssignment s = StringAssignment("Two");
+	StringAssignment z = StringAssignment(z.stringInput());
+	StringAssignment s = StringAssignment(s.stringInput());
 	
 	
 	
@@ -18,28 +18,29 @@ int main()
 	
 	
 	z.Compare(s);
-	s.findCharacter(2);
-	z.findCharacter(2);
+	s.characterAtIndex(2);
+	z.characterAtIndex(2);
 
-	/*z.Append(s);
+	cout << z.Append(s) << "\n";
 
-	s.Prepend(z); 
-*/
+	cout << s.Prepend(z) << "\n";
+
+	cout << "Lower: \n";
 	cout << s.ToLower()<<"\n";
-
 	cout << z.ToLower()<<"\n";
 	
+	cout << "\n";
+	cout << "Upper: \n";
+	cout << s.ToUpper() << "\n";
+	cout << z.ToUpper() << "\n";
 	
 	
 	
 	
-	
-	
-	/*z.stringInput();*/
 	
 
 	
-	////s.stringToupper();
+	
 
 	
 	cout << "\n";
