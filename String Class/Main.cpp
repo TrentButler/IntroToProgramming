@@ -9,10 +9,7 @@ int main()
 {
 	StringAssignment z = StringAssignment(z.stringInput());
 	StringAssignment s = StringAssignment(s.stringInput());
-	
-	
-	
-	
+		
 	cout << "String has " << s.Length() << " characters... \n";
 	cout << "String has " << z.Length() << " characters... \n";
 	
@@ -33,16 +30,7 @@ int main()
 	cout << "Upper: \n";
 	cout << s.ToUpper() << "\n";
 	cout << z.ToUpper() << "\n";
-	
-	
-	
-	
-	
-
-	
-	
-
-	
+		
 	cout << "\n";
 	system("pause");
 	
