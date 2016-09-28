@@ -1,5 +1,6 @@
 #include <windows.h>
 #include <iostream>
+#include <cassert>
 #include "String Class Header.h"
 using namespace std;
 
@@ -7,7 +8,7 @@ using namespace std;
 
 
 
-StringAssignment::StringAssignment(char *test)
+MyString::MyString(char *test)
 {
 	for (int i = 0; i < 266; i++)
 	{
@@ -17,7 +18,7 @@ StringAssignment::StringAssignment(char *test)
 
 }
 
-int StringAssignment::stringlength(char *z)
+int MyString::stringlength(char *z)
 {
 	int i = 0;
 	while (z[i] != 0)
@@ -28,7 +29,7 @@ int StringAssignment::stringlength(char *z)
 
 }
 
-int StringAssignment::Length()
+int MyString::Length()
 {
 
 	int i = 0;
@@ -43,7 +44,7 @@ int StringAssignment::Length()
 
 }
 
-bool StringAssignment::Compare(StringAssignment a)
+bool MyString::Compare(MyString a)
 {
 	bool running = true; // 'bool' statement for while loop.
 	int i = 0; // Initlizing 'i' to '0'.
@@ -87,24 +88,13 @@ bool StringAssignment::Compare(StringAssignment a)
 
 }
 
-char StringAssignment::characterAtIndex(int z)
+char MyString::characterAtIndex(int z)
 {
-	
-	cout << "\n";
-	cout << "The character found from string " << t_data << " was " << t_data[z] << "... \n";
-	
-	cout << "\n \n";
-	if (z > t_data[z])
-	{
-		cout << "There are no strings with " << z << " characters... \n";
-	}
-
-
-
+		
 	return t_data[z]; // Returning character from character array 'findCharacter[]'. 
 }
 
-char * StringAssignment::Append(StringAssignment a)
+char * MyString::Append(MyString a)
 {
 	
 	int i = stringlength(t_data); // destination
@@ -122,7 +112,7 @@ char * StringAssignment::Append(StringAssignment a)
 	
 }
 
-char * StringAssignment::Prepend(StringAssignment a)
+char * MyString::Prepend(MyString a)
 {
 	
 	cout << "\n";
@@ -145,7 +135,7 @@ char * StringAssignment::Prepend(StringAssignment a)
 
 }
 
-char * StringAssignment::ToLower()
+char * MyString::ToLower()
 {
 	int i = 0;
 	while(t_data[i]!=0)
@@ -162,7 +152,7 @@ char * StringAssignment::ToLower()
 
 }
 
-char * StringAssignment::ToUpper()
+char * MyString::ToUpper()
 {
 	
 
@@ -181,9 +171,13 @@ char * StringAssignment::ToUpper()
 	
 }
 
+const char * MyString::constChar()
+{
+	const char * Test1 = t_data;
+	return Test1;
+}
 
-
-char * StringAssignment::stringInput()
+char * MyString::stringInput()
 {
 	char Test1[266];
 

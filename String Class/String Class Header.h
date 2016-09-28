@@ -3,18 +3,19 @@
 #include <iostream>
 using namespace std;
 
-class StringAssignment
+class MyString
 {
 public:
-	StringAssignment() {}
-	StringAssignment(char *test);
+	MyString() {}
+	MyString(char *test);
 		
 	int Length();
-	bool Compare(StringAssignment a);
+	bool Compare(MyString a);
 	char characterAtIndex(int);
-	char * Append(StringAssignment a);
-	char * Prepend(StringAssignment a);
+	char * Append(MyString a);
+	char * Prepend(MyString a);
 	int stringlength(char *z);
+	const char * constChar();
 	
 	char * ToLower();
 	char * ToUpper();
