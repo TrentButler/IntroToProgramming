@@ -29,14 +29,13 @@ int main()
 
 	cout << "Prepend ~~>> " << secondString.Prepend(firstString) << " <<~~ Prepend" << "\n \n";
 
-	cout << "Lower: \n";
-	cout << secondString.ToLower()<<"\n \n";
-	cout << firstString.ToLower()<<"\n";
+	cout << "lowercase ~~>> " << secondString.ToLower()<< " <<~~ lowercase " <<"\n \n";
+	cout <<"lowercase ~~>> " <<firstString.ToLower()<< " <<~~ lowercase " <<"\n";
 	
 	cout << "\n";
-	cout << "Upper: \n";
-	cout << secondString.ToUpper() << "\n \n";
-	cout << firstString.ToUpper() << "\n";
+	
+	cout << "UPPERCASE ~~>> " << secondString.ToUpper() << " <<~~ UPPERCASE " << "\n \n";
+	cout << "UPPERCASE ~~>> " << firstString.ToUpper() << " <<~~ UPPERCASE " << "\n";
 	
 	
 	cout << "[=============================================================] \n";
