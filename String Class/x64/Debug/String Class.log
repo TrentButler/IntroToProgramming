@@ -1,3 +1,7 @@
-﻿  Main.cpp
+﻿  String Class.cpp
+c:\users\redtrent\documents\github\introtoprogramming\string class\string class.cpp(74): warning C4305: 'return': truncation from 'int' to 'bool'
+  Main.cpp
+  Generating Code...
+c:\users\redtrent\documents\github\introtoprogramming\string class\string class.cpp(193): warning C4172: returning address of local variable or temporary: Test1
   String Class.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\String Class.exe
   String Class.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\String Class.pdb (Partial PDB)

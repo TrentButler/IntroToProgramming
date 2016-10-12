@@ -1,4 +1,4 @@
 ﻿  Arrays.cpp
-c:\users\trent.butler\documents\github\introtoprogramming\arrays\arrays.cpp(232): warning C4101: 'days': unreferenced local variable
-  Arrays.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\x64\Debug\Arrays.exe
-  Arrays.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\x64\Debug\Arrays.pdb (Partial PDB)
+c:\users\redtrent\documents\github\introtoprogramming\arrays\arrays.cpp(229): warning C4101: 'days': unreferenced local variable
+  Arrays.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\Arrays.exe
+  Arrays.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\Arrays.pdb (Partial PDB)

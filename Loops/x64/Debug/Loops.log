@@ -1,3 +1,9 @@
 ﻿  Loops.cpp
-  Loops.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\x64\Debug\Loops.exe
-  Loops.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\x64\Debug\Loops.pdb (Partial PDB)
+c:\users\redtrent\documents\github\introtoprogramming\loops\loops.h(13): warning C4101: 'a': unreferenced local variable
+c:\users\redtrent\documents\github\introtoprogramming\loops\loops.h(23): warning C4101: 'b': unreferenced local variable
+c:\users\redtrent\documents\github\introtoprogramming\loops\loops.h(34): warning C4101: 'c': unreferenced local variable
+c:\users\redtrent\documents\github\introtoprogramming\loops\loops.h(44): warning C4101: 'd': unreferenced local variable
+c:\users\redtrent\documents\github\introtoprogramming\loops\loops.h(55): warning C4101: 'e': unreferenced local variable
+c:\users\redtrent\documents\github\introtoprogramming\loops\loops.cpp(46): warning C4553: '==': operator has no effect; did you intend '='?
+  Loops.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\Loops.exe
+  Loops.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\Loops.pdb (Partial PDB)

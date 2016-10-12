@@ -11,11 +11,8 @@ int charE;
 int test = 0;
 int display = 0;
 int display1 = 0;
-int input;
-char quit;
 
-
-
+bool runArray = true;
 
 
 //Array Example
@@ -420,8 +417,10 @@ void exercise9() {
 int main()
 {
 	
-	while (quit != 'q') {
-
+	while (runArray == true) {
+		char input = '!';
+		system("cls");
+		
 		cout << "Choose the exercise you would like to execute... \n";
 		cout << "0.) Example of an Array. \n";
 		cout << "1.) Exercise 1 \n";
@@ -433,79 +432,97 @@ int main()
 		cout << "7.) Exercise 7 \n";
 		cout << "8.) Exercise 8 \n";
 		cout << "9.) Exercise 9 \n";
-		cout << "Exit.) Press 'q' to exit this program.... \n";
+		cout << "Exit.) Press 'Q' to exit this program.... \n";
 
 		cin >> input;
+		system("cls");
 
 		switch (input) {
-		case 0:
+		case '0':
 		{
 			arrayExample();
+			break;
 		}
 
-		case 1:
+		case '1':
 		{
 			exercise1();
+			break;
 		}
 
-		case 2:
+		case '2':
 		{
 			exercise2();
+			break;
 		}
 
-		case 3:
+		case '3':
 		{
 			exercise3();
+			break;
 		}
 
-		case 4:
+		case '4':
 		{
 			exercise4();
+			break;
 		}
 
-		case 5:
+		case '5':
 		{
 			exercise5();
+			break;
 		}
 
-		case 6:
+		case '6':
 		{
 			exercise6();
+			break;
 		}
 
-		case 7:
+		case '7':
 		{
 			exercise7();
+			break;
 		}
 
-		case 8:
+		case '8':
 		{
 			exercise8();
+			break;
 		}
 
-		case 9:
+		case '9':
 		{
 			exercise9();
+			break;
 		}
 
+
+		case 'Q':
+		{
+			return 0;
+		}
 
 		default:
 		{
 			cout << "\n";
 			cout << "Wrong number please try again.... \n";
 			cout << "\n";
+			break;
 		}
 
 		}
 
 
-		system("pause");
-	};
-
-
-
-
+		
 	}
+
+	return 1;
+
+
+
+}
 	
 	
 

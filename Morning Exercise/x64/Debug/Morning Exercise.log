@@ -1,5 +1,5 @@
 ﻿  Main.cpp
-c:\users\trent.butler\documents\github\introtoprogramming\morning exercise\morning header.h(15): warning C4552: '-': operator has no effect; expected operator with side-effect
-c:\users\trent.butler\documents\github\introtoprogramming\morning exercise\morning header.h(11): warning C4101: 'ex2': unreferenced local variable
-  Morning Exercise.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\x64\Debug\Morning Exercise.exe
-  Morning Exercise.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\x64\Debug\Morning Exercise.pdb (Partial PDB)
+c:\users\redtrent\documents\github\introtoprogramming\morning exercise\morning header.h(24): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\redtrent\documents\github\introtoprogramming\morning exercise\morning header.h(37): warning C4172: returning address of local variable or temporary: gist3
+  Morning Exercise.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\Morning Exercise.exe
+  Morning Exercise.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\Morning Exercise.pdb (Partial PDB)
