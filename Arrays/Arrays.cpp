@@ -1,5 +1,5 @@
-# include <iostream>
-# include <windows.h>
+#include <iostream>
+#include <windows.h>
 using namespace std;
 
 int attack;
@@ -11,7 +11,6 @@ int charE;
 int test = 0;
 int display = 0;
 int display1 = 0;
-
 bool runArray = true;
 
 
