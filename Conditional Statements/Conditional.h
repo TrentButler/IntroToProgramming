@@ -52,7 +52,8 @@ void exercise3() // work on this
 	and in descending order if the sum is negative.
 	
 	If the sum is equal to zero then the program must display the numbers in the
-	same order that they were entered*/
+	same order that they were entered*/
+
 
 
 
@@ -120,7 +121,6 @@ void exercise3() // work on this
 		system("pause");
 
 }
-
 
 void exercise4()
 {
