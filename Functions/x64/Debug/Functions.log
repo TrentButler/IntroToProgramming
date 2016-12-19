@@ -1,4 +1,5 @@
 ﻿  Functions.cpp
-c:\users\trent.butler\documents\github\introtoprogramming\functions\functions.cpp(81): warning C4101: 'test': unreferenced local variable
-  Functions.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\x64\Debug\Functions.exe
-  Functions.vcxproj -> C:\Users\trent.butler\Documents\GitHub\IntroToProgramming\x64\Debug\Functions.pdb (Partial PDB)
+c:\users\redtrent\documents\github\introtoprogramming\functions\functions.h(103): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\redtrent\documents\github\introtoprogramming\functions\functions.h(91): warning C4715: 'exercise3': not all control paths return a value
+  Functions.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\Functions.exe
+  Functions.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\Functions.pdb (Partial PDB)

@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {	//EXCERCISE - CONDITIONAL STATEMENTS
-
+	system("color 0a");
 bool runConditional = true;
 
 while (runConditional == true)

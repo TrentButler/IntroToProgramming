@@ -10,19 +10,17 @@ is negative.If the sum is equal to zero then the program must display the number
 same order that they were entered*/
 
 
-void exercise1()
+int exercise1()
 {
-	std::cout << "1. Write an if statement that assigns 100 to x when y is equal to zero";
-	std::cout << " \n";
-	std::cout << " \n";
-	std::cout << "please press the zero key \n";
-	int input;
-	std::cin >> input;
-	int x;
-	x = (input != 0) ? 0 : 100;
-	std::cout << "x=" << x;
-	std::cout << " \n";
-	system("pause");
+	//1. Write an if statement that assigns 100 to x when y is equal to zero"
+	int x = 0;
+	int y = 0;
+
+	if (y == 0)
+	{
+		x = 100;
+	}
+	return x;
 }
 
 void exercise2()
@@ -53,72 +51,53 @@ void exercise3() // work on this
 	
 	If the sum is equal to zero then the program must display the numbers in the
 	same order that they were entered*/
-
-
-
-
-		cout << "Enter 3 numbers... \n \n";
-		int nums[3];
-		int sum = 0;
-		cin >> nums[0] >> nums[1] >> nums[2];
-			
-			for (int i = 0; i < 3; i++) 
-			{
-				sum = sum + nums[i];
-			}
-			
-			if (sum > 0)
-			{
-				for (int i = 2; i >= 0; i++)
-				{
-					for (int j = 2; j > 0; j--)
-					{
-						if (nums[j] < nums[j - 1])
-						{
-							int ex1;
-							ex1 = nums[j];
-							nums[j] = nums[j - 1];
-							nums[j - 1] = ex1;
-							
-						}
-		
-					}
-		
-				}
-			}
-		
-			if (sum < 0)
-			{
-				for (int i = 2; i >= 0; i--)
-				{
-					for (int j = 2; j > 1; j--)
-					{
-						if (nums[j] > nums[j - 1])
-						{
-							int ex1;
-							ex1 = nums[j];
-							nums[j] = nums[j - 1];
-							nums[j - 1] = ex1;
-							
-						}
-		
-					}
-		
-				}
-			}
-			
-			else		
-			{
-				for (int i = 0; i < 3; i++)
-				{
-					std::cout << nums[i] << " ";
-				}
-			}
-		
-
 	
-	
-		system("pause");
+	int fiveNums[5] = { 1,2,3,4,5 };
+	int sumNums = fiveNums[0] + fiveNums[1] + fiveNums[2] + fiveNums[3] + fiveNums[4];
+
+	if (sumNums > 0)
+	{
+		//ASENDING ORDER
+		int count = 4;
+		int holdThis = 4;
+		int showThis = 0;
+		
+
+		for (int i = 0; i < 3; i++)
+		{
+			if (fiveNums[i] > fiveNums[holdThis])
+			{
+				cout << fiveNums[i];
+				holdThis--;
+			}
+
+			if (fiveNums[i] == fiveNums[holdThis])
+			{
+				cout << fiveNums[i];
+				holdThis--;
+			}
+			
+			cout << fiveNums[holdThis];
+			holdThis--;
+
+		}
+
+
+
+	}
+
+	if (sumNums < 0)
+	{
+		//DECENDING ORDER
+
+	}
+
+	if (sumNums == 0)
+	{
+		//ORDER AS ENTERED
+	}
+
+
 
 }
 
