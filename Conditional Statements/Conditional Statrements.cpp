@@ -2,9 +2,10 @@
 #include <windows.h>
 #include "Conditional.h"
 using namespace std;
+
 int main()
 {	//EXCERCISE - CONDITIONAL STATEMENTS
-	system("color 0a");
+system("color 0a");
 bool runConditional = true;
 
 while (runConditional == true)
@@ -118,9 +119,4 @@ while (runConditional == true)
 
 system("pause");
 return 1;
-
-
-
-
-
 }

@@ -1,4 +1,4 @@
 ﻿  Conditional Statrements.cpp
-c:\users\redtrent\documents\github\introtoprogramming\conditional statements\conditional.h(304): warning C4102: 'std': unreferenced label
+c:\users\redtrent\documents\github\introtoprogramming\conditional statements\conditional.h(303): warning C4102: 'std': unreferenced label
   Conditional Statements.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\Conditional Statements.exe
   Conditional Statements.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\Conditional Statements.pdb (Partial PDB)

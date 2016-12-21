@@ -101,7 +101,8 @@ float exercise4()
 {
 	//4. The following statement calls a function named Half.
 	// The Half function returns a value that
-	// is half that of the argument.Write the function.
+	// is half that of the argument.Write the function.
+
 	float num = 22.2;
 
 	return Half(num);
@@ -138,10 +139,90 @@ int exercise5()
 	return 1;
 }
 
+//EXERCISE 6 
+//DONE
+void exercise6()
+{
+	cout << "Find the error in each of the following functions and explain how to fix them." << "\n\n";
+	cout << "int sum (int x, int y) \n";
+	cout << "{ \n";
+	cout << "int result; \n";
+	cout << "result = x + y; \n";
+	cout << "} \n\n";
+
+	cout << "Function 'sum(int x, int y)' must have a return value. \n\n";
+
+
+	cout << "int sum (int n) \n";
+	cout << "{ \n";
+	cout << "if (0==n) \n";
+	cout << "return 0; \n";
+	cout << "else \n";
+	cout << "n = n + n; \n";
+	cout << "} \n\n";
+
+	cout << "If statement 'if (0 == n)' is incorrect. \n";
+	cout << "If statement should be 'if(n == 0)' \n";
+	cout << "Function 'sum(int n)' must have a return value. \n\n";
+
+	cout << "#include <iostream> \n\n";
+	cout << "int main() \n";
+	cout << "{ \n";
+	cout << "double x = 13.6; \n";
+	cout << "std::cout << 'square of 13.6 = ' << square(x) << std::endl; \n";
+	cout << "} \n\n";
+	cout << "int square (int x) \n";
+	cout << "{ \n";
+	cout << "return x * x; \n";
+	cout << "} \n\n";
+
+	cout << "Function 'square(int x)' is defined after 'main()' function. \n";
 
 
 
+	system("pause");
 
+}
 
+//EXERCISE 7
+//DONE
+int exercise7(int N)
+{
+	int result = 0;
+	for (int i = 0; i < N; i++)
+	{
+		result += i;
+	}
+	return result;
+}
 
+//EXERCISE 8
+//DONE
+int exercise8(int* mArray, int size)
+{
+	int result = 0;
 
+	for (int i = 0; i < size; i++)
+	{
+		result += mArray[i];
+	}
+	return result;
+}
+
+//EXERCISE 9
+//NEEDS WORK
+int exercise9(int* mArray, int size)
+{
+	int j = size - 1;
+	int lowNum = 0;
+	for (int i = 0; i < size; i++)
+	{
+		if (mArray[i] < mArray[j])
+		{
+			lowNum = mArray[i];
+		}
+		lowNum = mArray[j];
+	}
+
+	return lowNum;
+}

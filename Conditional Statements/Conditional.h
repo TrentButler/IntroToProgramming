@@ -25,32 +25,24 @@ int exercise1()
 
 void exercise2()
 {
-	std::cout << "2. Write program that displays the larger of two numbers.";
-	std::cout << " \n";
-	std::cout << " \n";
-	std::cout << "Please enter two numbers";
-	std::cout << " \n";
+	cout << "2. Write program that displays the larger of two numbers.";
+	cout << " \n";
+	cout << " \n";
+	cout << "Please enter two numbers";
+	cout << " \n";
 	int num1;
 	int num2;
-	std::cin >> num1 >> num2;
+	cin >> num1 >> num2;
 	int display = (num1 > num2) ? num1 : num2;
-	std::cout << " \n";
-	std::cout << "The larger number is: "<< display;
-	std::cout << " \n";
+	cout << " \n";
+	cout << "The larger number is: "<< display;
+	cout << " \n";
 	system("pause");
 	
 }
 
-void exercise3() // work on this
+int exercise3()
 {
-	
-	/*Implement a C++ program that reads five(5) numbers and displays the numbers in
-	ascending order if the sum of the five numbers is positive 
-	
-	and in descending order if the sum is negative.
-	
-	If the sum is equal to zero then the program must display the numbers in the
-	same order that they were entered*/
 	
 	int fiveNums[5] = { 1,2,3,4,5 };
 	int sumNums = fiveNums[0] + fiveNums[1] + fiveNums[2] + fiveNums[3] + fiveNums[4];
@@ -58,56 +50,57 @@ void exercise3() // work on this
 	if (sumNums > 0)
 	{
 		//ASENDING ORDER
-		int count = 4;
-		int holdThis = 4;
-		int showThis = 0;
+		//FIND THE LARGEST VALUES
 		
-
-		for (int i = 0; i < 3; i++)
+		int j = 4;
+		for (int i = 0; i < 5; i++)
 		{
-			if (fiveNums[i] > fiveNums[holdThis])
+			if (fiveNums[i] > fiveNums[j])
 			{
 				cout << fiveNums[i];
-				holdThis--;
+				j--;
 			}
-
-			if (fiveNums[i] == fiveNums[holdThis])
-			{
-				cout << fiveNums[i];
-				holdThis--;
-			}
-			
-			cout << fiveNums[holdThis];
-			holdThis--;
-
 		}
-
-
-
 	}
 
 	if (sumNums < 0)
 	{
 		//DECENDING ORDER
+		int j = 4;
 
+		for (int i = 0; i < 4; i++)
+		{
+			if (fiveNums[i] < fiveNums[j])
+			{
+				cout << fiveNums[i];
+				j--;
+			}
+
+		}
 	}
 
 	if (sumNums == 0)
 	{
 		//ORDER AS ENTERED
+		for (int i = 0; i < 5; i++)
+		{
+			cout << fiveNums[i];
+		}
+
 	}
 
 
-
+	return 1;
 }
 
 void exercise4()
 {
-		std::cout << " \n";
-		std::cout << "4. Convert 'if' statement into a 'switch' statement. \n";
+		cout << " \n";
+		cout << "4. Convert 'if' statement into a 'switch' statement. \n";
+		cout << "Pick a number between 1-4 \n";
 	
 		int choice;
-		std::cin >> choice;
+		cin >> choice;
 		
 		switch (choice){
 			
@@ -166,48 +159,57 @@ void exercise5()
 
 void exercise6()
 {
-		std::cout << " \n";
-		std::cout << "6. Write a program that will peform the appropriate math based on user input. \n";
-		std::cout << " \n";
-		std::cout << " \n";
-		int num3;
-		int num4;
+		cout << " \n";
+		cout << "6. Write a program that will peform the appropriate math based on user input. \n";
+		cout << " \n";
+		cout << " \n";
+		float num3;
+		float num4;
 		char operate;
-		int display2;
+		float display2;
 			
-		std::cout << "Please enter first number. \n";
-		std::cin >> num3;
-		std::cout << "Please enter operator (+ - / *) \n";
-		std::cin >> operate;
-		std::cout << "Please enter second number. \n";
-		std::cin >> num4;
+		cout << "Please enter first number. \n";
+		cin >> num3;
+		cout << "Please enter operator (+ - / *) \n";
+		cin >> operate;
+		cout << "Please enter second number. \n";
+		cin >> num4;
 	
 		switch (operate){
-	
+
 			case '+':
-				display2 = num3 + num4; 
+			{
+				display2 = num3 + num4;
 				break;
+			}				
 	
 			case '*':
+			{
 				display2 = num3 * num4;
 				break;
+			}				
 	
 			case '-':
+			{
 				display2 = num3 - num4;
 				break;
+			}				
 	
 			case '/':
+			{
 				display2 = num3 / num4;
 				break;
+			}
 	
 			default:
-				std::cout << "Incorrect operator, please enter (+ - / *) \n";
+			{
+				cout << "Incorrect operator, please enter (+ - / *) \n";
 				break;
-			
+			}			
 		}
-		std::cout << " \n";
-	
-		std::cout << "The answer is " << display2 << "\n";
+
+		cout << "\n";	
+		cout << "The answer is " << display2 << "\n";
 	
 		system("pause");
 
