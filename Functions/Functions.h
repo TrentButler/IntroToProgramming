@@ -2,6 +2,7 @@
 #include <iostream>
 #include <windows.h>
 #include <cstdlib>
+#include <cmath>
 using namespace std;
 
 //FUNCTIONS EXERCISE
@@ -210,7 +211,6 @@ int exercise8(int* mArray, int size)
 }
 
 //EXERCISE 9
-//NEEDS WORK
 int exercise9(int* mArray, int size)
 {
 	int j = size - 1;
@@ -221,8 +221,197 @@ int exercise9(int* mArray, int size)
 		{
 			lowNum = mArray[i];
 		}
-		lowNum = mArray[j];
+		j--;
 	}
 
 	return lowNum;
 }
+
+//EXERCISE 10
+//DONE
+int* exercise10(int* inputArray, int* outputArray, int size)
+{
+
+	for (int i = 0; i < size; i++)
+	{
+		outputArray[i] = inputArray[i] * i;
+	}
+
+	return outputArray;
+
+}
+
+//EXERCISE 11
+//DONE
+int* exercise11(int* inputArray1, int* inputArray2, int* outputArray, int size)
+{
+	for (int i = 0; i < size; i++)
+	{
+		outputArray[i] = inputArray1[i] + inputArray2[i];
+	}
+	return outputArray;
+}
+
+//EXERCISE 12
+//DONE
+int* exercise12(int* inputArray, int size)
+{
+	int sum = 0;
+	for (int i = 0; i < size; i++)
+	{
+		 sum += inputArray[i];
+	}
+
+	inputArray[size-1] = sum;
+	return inputArray;
+
+}
+
+//EXERCISE 13
+//DONE
+int exercise13(int* inputArray, int size, int num)
+{
+	for (int i = 0; i < size; i++)
+	{
+		if (inputArray[i] == num)
+		{
+			return i;
+		}
+	}
+	return -1;
+}
+
+//EXERCISE 14
+//DONE
+int exercise14(int* inputArray, int* outputArray1, int* outputArray2, int size)
+{
+	int count = 0;
+	for (int i = 0; i < size; i++)
+	{
+		//POSTIVE
+		if (inputArray[i] >= 0)
+		{
+			outputArray1[i] = inputArray[i];
+			count++;
+		}
+
+		//NEGATIVE
+		if (inputArray[i] < 0)
+		{
+			outputArray2[i] = inputArray[i];
+		}
+
+
+	}
+
+	return count;
+}
+
+//EXERCISE 15
+//DONE
+int exercise15(int x, int y)
+{
+	return pow(x, y);
+}
+
+//EXERCISE 16
+//DONE
+void exercise16(int* inputArray, int size)
+{
+	int foundNum = inputArray[0];
+	int count = 0;
+
+	for (int i = 0; i < size; i++)
+	{
+		if (inputArray[i] == foundNum)
+		{
+			count++;
+			foundNum = inputArray[i];
+		}
+
+		if (inputArray[i] != foundNum)
+		{
+			cout << count << foundNum;
+			count = 1;
+			foundNum = inputArray[i];
+		}
+	}
+	cout << count << foundNum;
+
+}
+
+//EXERCISE 17
+//DONE
+enum rpsChoice
+{
+	rock = 0,
+	paper = 1,
+	scissors = 2,
+
+}; // Rock, Paper, Scissors choices  
+class rpsGame
+{
+
+private:
+	string choice_com, choice_user;
+public:
+	rpsGame() {};
+	rpsChoice com;
+	rpsChoice user;
+
+	void rpsRun()
+	{
+		if (user == com)
+		{
+			cout << "Tie";
+			return;
+		}
+
+		switch (com)
+		{
+		case rock: (user == paper) ? cout << "Win" : cout << "Lose";
+			break;
+		case paper: (user == scissors) ? cout << "Win" : cout << "Lose";
+			break;
+		case scissors: (user == rock) ? cout << "Win" : cout << "Lose";
+			break;
+		}
+
+		cout << "\n";
+	}
+
+	void rpsResult()
+	{
+		choice_com = ((int)com == 0) ? "rock" : ((int)com == 1) ? "paper" : "scissors";
+		choice_user = ((int)user == 0) ? "rock" : ((int)user == 1) ? "paper" : "scissors";
+		cout << "Your choice was " << choice_user.c_str() << "\n";
+		cout << "Computer's choice was " << choice_com.c_str() << "\n";
+
+	}
+
+
+};
+
+int exercise17()
+{
+	int input = -1;
+	bool rpsRunning = true;
+	rpsGame *RPS = new rpsGame();
+	while (rpsRunning)
+	{
+		int randomNum = rand() % 3 + 1;
+		cout << "Rock Paper Scissors Game \n \n";
+		cout << "0.) ROCK \n" << "1.) PAPER \n" << "2.) SCISSORS \n" << "4.) QUIT \n";
+		cin >> input;
+		if (input == 4)
+		{
+			break;
+		}
+		RPS->com = (rpsChoice)randomNum;
+		RPS->user = (rpsChoice)input;
+		RPS->rpsRun();
+		RPS->rpsResult();
+	}
+	return 0;
+}
+

@@ -1,5 +1,6 @@
 ﻿  Functions.cpp
-c:\users\redtrent\documents\github\introtoprogramming\functions\functions.h(106): warning C4305: 'initializing': truncation from 'double' to 'float'
-c:\users\redtrent\documents\github\introtoprogramming\functions\functions.h(92): warning C4715: 'exercise3': not all control paths return a value
+c:\users\redtrent\documents\github\introtoprogramming\functions\functions.h(107): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\redtrent\documents\github\introtoprogramming\functions\functions.h(314): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+c:\users\redtrent\documents\github\introtoprogramming\functions\functions.h(93): warning C4715: 'exercise3': not all control paths return a value
   Functions.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\Functions.exe
   Functions.vcxproj -> C:\Users\Redtrent\Documents\GitHub\IntroToProgramming\x64\Debug\Functions.pdb (Partial PDB)
