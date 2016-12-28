@@ -19,6 +19,7 @@ int main()
 		cout << "4.) Gist 4 \n";
 		cout << "5.) Gist 5 \n";
 		cout << "6.) Gist 6 \n";
+		cout << "7.) PsudoMult \n";
 		cout << "Q.) Exit Application \n";
 		
 		char morningInput = '!';
@@ -55,6 +56,12 @@ int main()
 		case '6':
 		{
 			gist6(gist6_var1, gist6_var2);
+			break;
+		}
+
+		case '7':
+		{
+			psudoMult(12, 12);
 			break;
 		}
 

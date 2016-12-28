@@ -75,3 +75,15 @@ void gist6(char &a, char &b)
 
 
 }
+
+
+
+float psudoMult(float num1, float num2)
+{
+	float result = 0;
+	for (int i = 0; i < num2; i++)
+	{
+		result += num1;
+	}
+	return result;
+}
